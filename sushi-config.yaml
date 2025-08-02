@@ -46,8 +46,6 @@ publisher:
 pages:
   index.md:
     title: Home
-  search-operation.md:
-    title: Search and Operation
 
 
 # dependancies.md:
