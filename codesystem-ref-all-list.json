@@ -10,11 +10,11 @@
       "oids" : ["1.2.840.10008.2.16.4"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
       "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
-      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
+      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://hl7.org/fhir/CodeSystem/medication-status",
@@ -600,10 +600,10 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-      "http://hl7.org/fhir/R4/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
       "http://hl7.org/fhir/R4/valueset-c80-doc-typecodes.html" : "Document Type Value Set",
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+      "http://hl7.org/fhir/R4/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
+      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -615,20 +615,20 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
       "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
       "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
       "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -736,8 +736,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1201"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/coverage-class",
@@ -820,7 +820,7 @@
       "description" : "Attached is vocabulary for the record lifecycle events, as per DICOM Audit Message,",
       "uses" : {
       },
-      "http://hl7.org/fhir/extensions/5.3.0-ballot/ValueSet-object-lifecycle-events.html" : "ObjectLifecycleEvents"
+      "http://hl7.org/fhir/extensions/5.3.0-ballot-tc/ValueSet-object-lifecycle-events.html" : "ObjectLifecycleEvents"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/diet",
@@ -915,8 +915,8 @@
       "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
@@ -927,7 +927,7 @@
       "description" : "Attached is vocabulary for the 27 record lifecycle events, as per ISO TS 21089-2017, Health Informatics - Trusted End-to-End Information Flows, Section 3, Terms and Definitions (2017, at ISO Central Secretariat, passed ballot and ready for publication).  This will also be included in the FHIR EHR Record Lifecycle Event Implementation Guide, balloted and (to be) published with FHIR STU-3.",
       "uses" : {
       },
-      "http://hl7.org/fhir/extensions/5.3.0-ballot/ValueSet-object-lifecycle-events.html" : "ObjectLifecycleEvents",
+      "http://hl7.org/fhir/extensions/5.3.0-ballot-tc/ValueSet-object-lifecycle-events.html" : "ObjectLifecycleEvents",
       "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
     },
     {
@@ -1204,10 +1204,10 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActPharmacySupplyType.html" : "ActPharmacySupplyType",
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActPharmacySupplyType.html" : "ActPharmacySupplyType",
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -1292,8 +1292,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -1317,8 +1317,8 @@
       "oids" : ["2.16.840.1.113883.5.88"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode",
@@ -1343,8 +1343,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
     },
     {
@@ -1357,8 +1357,8 @@
       "oids" : ["2.16.840.1.113883.5.110"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -1370,9 +1370,9 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",

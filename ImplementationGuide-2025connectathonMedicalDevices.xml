@@ -11,7 +11,7 @@
   <name value="DHINandSON2025connectathonMedicalDevices"/>
   <title value="DHIN &amp; SON 2025 connectathon Medical Devices testing"/>
   <status value="draft"/>
-  <date value="2025-08-02T11:55:50+01:00"/>
+  <date value="2025-08-02T15:01:02+01:00"/>
   <publisher value="https://www.dhin-hie.org"/>
   <contact>
     <name value="https://www.dhin-hie.org"/>
@@ -57,7 +57,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.3.0-ballot"/>
+    <version value="5.3.0-ballot-tc"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -1434,14 +1434,6 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="search-operation.html"/>
-        </extension>
-        <nameUrl value="search-operation.html"/>
-        <title value="Search and Operation"/>
         <generation value="markdown"/>
       </page>
     </page>

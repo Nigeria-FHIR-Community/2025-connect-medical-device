@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "DHINandSON2025connectathonMedicalDevices"] ; # 
   fhir:title [ fhir:v "DHIN & SON 2025 connectathon Medical Devices testing"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-08-02T11:55:50+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-02T15:01:02+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://www.dhin-hie.org"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://www.dhin-hie.org" ] ;
@@ -77,7 +77,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.3.0-ballot" ]
+     fhir:version [ fhir:v "5.3.0-ballot-tc" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -2476,20 +2476,6 @@
            fhir:v "index.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Home" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:url ;
-             fhir:v "search-operation.html"^^xsd:anyURI
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:url ;
-           fhir:v "search-operation.html"^^xsd:anyURI
-         ] ;
-         fhir:title [ fhir:v "Search and Operation" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

@@ -10,7 +10,7 @@
   "name" : "DHINandSON2025connectathonMedicalDevices",
   "title" : "DHIN & SON 2025 connectathon Medical Devices testing",
   "status" : "draft",
-  "date" : "2025-08-02T11:55:50+01:00",
+  "date" : "2025-08-02T15:01:02+01:00",
   "publisher" : "https://www.dhin-hie.org",
   "contact" : [{
     "name" : "https://www.dhin-hie.org",
@@ -60,7 +60,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.3.0-ballot"
+    "version" : "5.3.0-ballot-tc"
   }],
   "definition" : {
     "extension" : [{
@@ -1679,15 +1679,6 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "search-operation.html"
-        }],
-        "nameUrl" : "search-operation.html",
-        "title" : "Search and Operation",
         "generation" : "markdown"
       }]
     },

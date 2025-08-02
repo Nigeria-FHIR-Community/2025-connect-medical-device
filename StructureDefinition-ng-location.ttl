@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NgLocation"] ; # 
   fhir:title [ fhir:v "NG Location"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-08-02T11:55:50+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-02T15:01:02+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://www.dhin-hie.org"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://www.dhin-hie.org" ] ;
