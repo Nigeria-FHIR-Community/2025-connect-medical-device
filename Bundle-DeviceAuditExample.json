@@ -1,0 +1,74 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "DeviceAuditExample",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit"]
+  },
+  "type" : "collection",
+  "timestamp" : "2025-07-30T10:10:00+01:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:audit-001",
+    "resource" : {
+      "resourceType" : "AuditEvent",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AuditEvent_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AuditEvent </b></p><p><b>type</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-audit-event-type.html#audit-event-type-rest\">Audit Event ID rest</a>: RESTful Operation</p><p><b>subtype</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-restful-interaction.html#restful-interaction-read\">FHIR Restful Interactions read</a>: read</p><p><b>recorded</b>: 2025-07-30 10:09:50+0100</p><h3>Agents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Who</b></td><td><b>Requestor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-DeviceAuditExample.html#urn-uuid-device-001\">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></td><td>false</td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Site</b></td><td><b>Observer</b></td></tr><tr><td style=\"display: none\">*</td><td>Laboratory Information System</td><td><a href=\"Bundle-DeviceAuditExample.html#urn-uuid-org-001\">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></td></tr></table></div>"
+      },
+      "type" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/audit-event-type",
+        "code" : "rest"
+      },
+      "subtype" : [{
+        "system" : "http://hl7.org/fhir/restful-interaction",
+        "code" : "read"
+      }],
+      "recorded" : "2025-07-30T10:09:50+01:00",
+      "agent" : [{
+        "who" : {
+          "reference" : "urn:uuid:device-001"
+        },
+        "requestor" : false
+      }],
+      "source" : {
+        "site" : "Laboratory Information System",
+        "observer" : {
+          "reference" : "urn:uuid:org-001"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:device-001",
+    "resource" : {
+      "resourceType" : "Device",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device </b></p><h3>UdiCarriers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DeviceIdentifier</b></td></tr><tr><td style=\"display: none\">*</td><td>CHEM12345678</td></tr></table><p><b>status</b>: Active</p><p><b>manufacturer</b>: BioAnalyzer Ltd</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>BioAnalyzer 2000</td><td>minjirya</td></tr></table></div>"
+      },
+      "udiCarrier" : [{
+        "deviceIdentifier" : "CHEM12345678"
+      }],
+      "status" : "active",
+      "manufacturer" : "BioAnalyzer Ltd",
+      "deviceName" : [{
+        "name" : "BioAnalyzer 2000",
+        "type" : "minjirya"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:org-001",
+    "resource" : {
+      "resourceType" : "Organization",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization </b></p><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF0001</p><p><b>name</b>: State Diagnostic Center</p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://herfama.lagos.ng",
+        "value" : "HF0001"
+      }],
+      "name" : "State Diagnostic Center"
+    }
+  }]
+}

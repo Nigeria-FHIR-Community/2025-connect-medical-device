@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="service-request-007"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest service-request-007</b></p><a name="service-request-007"> </a><a name="hcservice-request-007"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title="Codes:">Calibration Procedure Request</span></p><p><b>subject</b>: <a href="Device-device-001.html">Device: identifier = http://hospital.smartdev.com/devices#CHEM-ANA-0099; status = active; manufacturer = SmartDev; type = </a></p><p><b>authoredOn</b>: 2025-07-30</p><p><b>requester</b>: <a href="Organization/org-001">Organization/org-001</a></p></div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <code>
+    <text value="Calibration Procedure Request"/>
+  </code>
+  <subject>
+    <reference value="Device/device-001"/>
+  </subject>
+  <authoredOn value="2025-07-30"/>
+  <requester>
+    <reference value="Organization/org-001"/>
+  </requester>
+</ServiceRequest>

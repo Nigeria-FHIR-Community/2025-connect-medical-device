@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="encounter-008"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter encounter-008</b></p><a name="encounter-008"> </a><a name="hcencounter-008"> </a><p><b>status</b>: Finished</p><p><b>class</b>: [not stated] AMB: AMB</p><p><b>subject</b>: <code>urn:uuid:patient-001</code></p><p><b>period</b>: 2025-07-30 09:45:00+0100 --&gt; 2025-07-30 10:05:00+0100</p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <code value="AMB"/>
+  </class>
+  <subject>
+    <reference value="urn:uuid:patient-001"/>
+  </subject>
+  <period>
+    <start value="2025-07-30T09:45:00+01:00"/>
+    <end value="2025-07-30T10:05:00+01:00"/>
+  </period>
+</Encounter>

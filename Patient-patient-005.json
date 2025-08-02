@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Patient",
+  "id" : "patient-005",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-005</b></p><a name=\"patient-005\"> </a><a name=\"hcpatient-005\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Musa Abubakar  Male, DoB: 1988-04-22 ( https://nimc.gov.ng#NIN99887766)</p><hr/></div>"
+  },
+  "identifier" : [{
+    "system" : "https://nimc.gov.ng",
+    "value" : "NIN99887766"
+  }],
+  "name" : [{
+    "family" : "Abubakar",
+    "given" : ["Musa"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1988-04-22"
+}

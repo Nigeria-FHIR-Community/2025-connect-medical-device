@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="diagnostic-report-008"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport diagnostic-report-008</b></p><a name="diagnostic-report-008"> </a><a name="hcdiagnostic-report-008"> </a><h2><span title="Codes:">Vital Signs Summary</span> </h2><table class="grid"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2025-07-30 10:00:00+0100</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td/><td/></tr></table></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <text value="Vital Signs Summary"/>
+  </code>
+  <subject>
+    <reference value="urn:uuid:patient-001"/>
+  </subject>
+  <effectiveDateTime value="2025-07-30T10:00:00+01:00"/>
+  <result>
+    <reference value="urn:uuid:observation-hr"/>
+  </result>
+</DiagnosticReport>

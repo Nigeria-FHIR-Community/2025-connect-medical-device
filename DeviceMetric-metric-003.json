@@ -1,0 +1,22 @@
+{
+  "resourceType" : "DeviceMetric",
+  "id" : "metric-003",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric metric-003</b></p><a name=\"metric-003\"> </a><a name=\"hcmetric-003\"> </a><p><b>type</b>: <span title=\"Codes:\">Glucose</span></p><p><b>unit</b>: <span title=\"Codes:\">mmol/L</span></p><p><b>category</b>: Measurement</p><p><b>measurementPeriod</b>: Once per 5 minutes</p></div>"
+  },
+  "type" : {
+    "text" : "Glucose"
+  },
+  "unit" : {
+    "text" : "mmol/L"
+  },
+  "category" : "measurement",
+  "measurementPeriod" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 5,
+      "periodUnit" : "min"
+    }
+  }
+}

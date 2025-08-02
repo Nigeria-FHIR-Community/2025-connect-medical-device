@@ -1,0 +1,19 @@
+{
+  "url" : "https://dhin.org/2025Connectathon/ImplementationGuide/2025connectathonMedicalDevices",
+  "name" : "DHINandSON2025connectathonMedicalDevices",
+  "title" : "DHIN & SON 2025 connectathon Medical Devices testing",
+  "description" : "Implementation Guide for testing Medical Devices",
+  "status" : "draft",
+  "package-id" : "2025connectathonMedicalDevices",
+  "ig-ver" : "0.1.0",
+  "date" : "Sat, 02 Aug, 2025 11:56:42 +0100",
+  "dateISO8601" : "2025-08-02T11:56:42+01:00",
+  "errs" : 274,
+  "warnings" : 133,
+  "hints" : 9,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 745365016
+}

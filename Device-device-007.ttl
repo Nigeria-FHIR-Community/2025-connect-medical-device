@@ -1,0 +1,28 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Device/device-007> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "device-007"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-007</b></p><a name=\"device-007\"> </a><a name=\"hcdevice-007\"> </a><p><b>identifier</b>: <code>https://nigeria.gov.ng/devices</code>/CHEM-ANALYZER-007</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Global Diagnostics Ltd</p><p><b>modelNumber</b>: ChemX-2000</p><p><b>type</b>: <span title=\"Codes:\">Automated Chemistry Analyzer</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nigeria.gov.ng/devices"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "CHEM-ANALYZER-007" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "Global Diagnostics Ltd"] ; # 
+  fhir:modelNumber [ fhir:v "ChemX-2000"] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Automated Chemistry Analyzer" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

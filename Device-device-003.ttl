@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Device/device-003> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "device-003"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-003</b></p><a name=\"device-003\"> </a><a name=\"hcdevice-003\"> </a><p><b>identifier</b>: <code>http://manufacturer.com/devices</code>/CHEM-2025-001</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: BioTech Instruments Ltd.</p><p><b>serialNumber</b>: SN12345678</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>BioChemX-3000</td><td>Model name</td></tr></table><p><b>modelNumber</b>: BioChemX-3000</p><p><b>type</b>: <span title=\"Codes:\">Chemistry Analyzer</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://manufacturer.com/devices"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "CHEM-2025-001" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "BioTech Instruments Ltd."] ; # 
+  fhir:serialNumber [ fhir:v "SN12345678"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "BioChemX-3000" ] ;
+     fhir:type [ fhir:v "model-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "BioChemX-3000"] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Chemistry Analyzer" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

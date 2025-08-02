@@ -1,0 +1,207 @@
+{
+  "package": "2025connectathonMedicalDevices",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "NG",
+  "extensions": [],
+  "profiles": {
+    "Patient": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient",
+        "title": "NG Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner",
+        "title": "NG Practitioner"
+      }
+    ],
+    "AuditEvent": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-audit-event",
+        "title": "NG AuditEvent"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit",
+        "title": "1-NG-Bundle: Device Audit"
+      },
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session",
+        "title": "2-NG-Bundle: Device Monitoring Session"
+      },
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation",
+        "title": "3-NG-Bundle: Device Observation"
+      },
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance",
+        "title": "4-NG-Bundle: Device Provenance"
+      },
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-registration",
+        "title": "5-NG-Bundle: Device Registration"
+      },
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution",
+        "title": "6-NG-Bundle: Device Task Execution"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage",
+        "title": "NG-Claim Coverage"
+      }
+    ],
+    "Task": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task",
+        "title": "NG Task"
+      }
+    ],
+    "Communication": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-communication",
+        "title": "NG Communication"
+      }
+    ],
+    "Device": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-device",
+        "title": "NG Device"
+      }
+    ],
+    "DeviceDefinition": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-device-definition",
+        "title": "NG DeviceDefinition"
+      }
+    ],
+    "DeviceMetric": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-device-metric",
+        "title": "NG DeviceMetric"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-diagnostic-report",
+        "title": "NG DiagnosticReport"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-document-reference",
+        "title": "NG DocumentReference"
+      }
+    ],
+    "CoverageEligibilityRequest": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request",
+        "title": "NG-CoverageEligibilityRequest"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization",
+        "title": "NG Organization"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-location",
+        "title": "NG Location"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-medication",
+        "title": "NG Medication"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-medication-dispense",
+        "title": "NG MedicationDispense"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-medication-request",
+        "title": "NG MedicationRequest"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-observation-labresult",
+        "title": "NG Observation - Laboratory Result"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-practitionerrole",
+        "title": "NG PractitionerRole"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-prescription-encounter",
+        "title": "NG Encounter"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-provenance",
+        "title": "NG Provenance"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ]
+  }
+}

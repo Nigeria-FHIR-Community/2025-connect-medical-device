@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="DeviceRegistrationBundle001"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-registration"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2025-07-30T10:15:00+01:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:device-001"/>
+    <resource>
+      <Device>
+        <id value="device-006"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-device"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Device_device-006"> </a><p class="res-header-id"><b>Generated Narrative: Device device-006</b></p><a name="device-006"> </a><a name="hcdevice-006"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-device.html">NG Device</a></p></div><p><b>identifier</b>: <code>GE</code>/hsytsy</p><p><b>definition</b>: <a href="Bundle-DeviceRegistrationBundle001.html#urn-uuid-device-def-001">Bundle: type = collection; timestamp = 2025-07-30 10:15:00+0100</a></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Abbott Diagnostics</p><p><b>serialNumber</b>: SN123456789</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>ARCHITECT c4000</td><td>Manufacturer name</td></tr></table><p><b>modelNumber</b>: C4000</p><p><b>type</b>: <span title="Codes:">chemistryAnalyzer</span></p></div>
+        </text>
+        <identifier>
+          <system value="GE"/>
+          <value value="hsytsy"/>
+        </identifier>
+        <definition>
+          <reference value="urn:uuid:device-def-001"/>
+        </definition>
+        <status value="active"/>
+        <manufacturer value="Abbott Diagnostics"/>
+        <serialNumber value="SN123456789"/>
+        <deviceName>
+          <name value="ARCHITECT c4000"/>
+          <type value="manufacturer-name"/>
+        </deviceName>
+        <modelNumber value="C4000"/>
+        <type>
+          <coding>
+            <code value="chemistryAnalyzer"/>
+          </coding>
+        </type>
+      </Device>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:device-def-001"/>
+    <resource>
+      <DeviceDefinition>
+        <id value="device-def-006"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-device-definition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DeviceDefinition_device-def-006"> </a><p class="res-header-id"><b>Generated Narrative: DeviceDefinition device-def-006</b></p><a name="device-def-006"> </a><a name="hcdevice-def-006"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-device-definition.html">NG DeviceDefinition</a></p></div><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>ARCHITECT c4000</td><td>Manufacturer name</td></tr></table><p><b>modelNumber</b>: C4000</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/device-type CHEM}">CHEM</span></p></div>
+        </text>
+        <deviceName>
+          <name value="ARCHITECT c4000"/>
+          <type value="manufacturer-name"/>
+        </deviceName>
+        <modelNumber value="C4000"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/device-type"/>
+            <code value="CHEM"/>
+          </coding>
+        </type>
+      </DeviceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:org-manufacturer"/>
+    <resource>
+      <Organization>
+        <id value="org-manufacturer"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_org-manufacturer"> </a><p class="res-header-id"><b>Generated Narrative: Organization org-manufacturer</b></p><a name="org-manufacturer"> </a><a name="hcorg-manufacturer"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-imm-organization.html">NG Organization</a></p></div><p><b>identifier</b>: <code>https://ndra.gov.ng</code>/ABBOTT001</p><p><b>type</b>: <span title="Codes:">manufacturer</span></p><p><b>name</b>: Abbott Diagnostics Ltd</p><p><b>address</b>: Plot 45 BioTech Drive Abuja FCT </p></div>
+        </text>
+        <identifier>
+          <system value="https://ndra.gov.ng"/>
+          <value value="ABBOTT001"/>
+        </identifier>
+        <type>
+          <coding>
+            <code value="manufacturer"/>
+          </coding>
+        </type>
+        <name value="Abbott Diagnostics Ltd"/>
+        <address>
+          <line value="Plot 45 BioTech Drive"/>
+          <city value="Abuja"/>
+          <district value="eti-osa"/>
+          <state value="FCT"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+</Bundle>

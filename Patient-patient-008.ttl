@@ -1,0 +1,28 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Patient/patient-008> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-008"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-008</b></p><a name=\"patient-008\"> </a><a name=\"hcpatient-008\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Grace Ibrahim  Female, DoB: 1990-06-15 ( https://nimc.gov.ng#NIN98989898)</p><hr/></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nimc.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "NIN98989898" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Ibrahim" ] ;
+     fhir:given ( [ fhir:v "Grace" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1990-06-15"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

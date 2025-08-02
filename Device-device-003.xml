@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="device-003"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device device-003</b></p><a name="device-003"> </a><a name="hcdevice-003"> </a><p><b>identifier</b>: <code>http://manufacturer.com/devices</code>/CHEM-2025-001</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: BioTech Instruments Ltd.</p><p><b>serialNumber</b>: SN12345678</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>BioChemX-3000</td><td>Model name</td></tr></table><p><b>modelNumber</b>: BioChemX-3000</p><p><b>type</b>: <span title="Codes:">Chemistry Analyzer</span></p></div>
+  </text>
+  <identifier>
+    <system value="http://manufacturer.com/devices"/>
+    <value value="CHEM-2025-001"/>
+  </identifier>
+  <status value="active"/>
+  <manufacturer value="BioTech Instruments Ltd."/>
+  <serialNumber value="SN12345678"/>
+  <deviceName>
+    <name value="BioChemX-3000"/>
+    <type value="model-name"/>
+  </deviceName>
+  <modelNumber value="BioChemX-3000"/>
+  <type>
+    <text value="Chemistry Analyzer"/>
+  </type>
+</Device>

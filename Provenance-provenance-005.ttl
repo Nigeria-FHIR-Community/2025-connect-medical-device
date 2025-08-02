@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Provenance/provenance-005> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "provenance-005"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Provenance provenance-005</b></p><a name=\"provenance-005\"> </a><a name=\"hcprovenance-005\"> </a><p>Provenance for <code>urn:uuid:device-005</code></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2025-07-30 11:25:00+0100</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes:\">Device Registration Service</span></td><td>AutoSync Service</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:target ( [
+     fhir:reference [ fhir:v "urn:uuid:device-005" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2025-07-30T11:25:00+01:00"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:text [ fhir:v "Device Registration Service" ]
+     ] ;
+     fhir:who [
+       fhir:display [ fhir:v "AutoSync Service" ]
+     ]
+  ] ) ; # 
+  fhir:entity ( [
+     fhir:role [ fhir:v "source" ] ;
+     fhir:what [
+       fhir:display [ fhir:v "Device Onboarding CSV" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

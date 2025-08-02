@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Organization",
+  "id" : "org-manufacturer",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-manufacturer</b></p><a name=\"org-manufacturer\"> </a><a name=\"hcorg-manufacturer\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://ndra.gov.ng</code>/ABBOTT001</p><p><b>type</b>: <span title=\"Codes:\">manufacturer</span></p><p><b>name</b>: Abbott Diagnostics Ltd</p><p><b>address</b>: Plot 45 BioTech Drive Abuja FCT </p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://ndra.gov.ng",
+    "value" : "ABBOTT001"
+  }],
+  "type" : [{
+    "coding" : [{
+      "code" : "manufacturer"
+    }]
+  }],
+  "name" : "Abbott Diagnostics Ltd",
+  "address" : [{
+    "line" : ["Plot 45 BioTech Drive"],
+    "city" : "Abuja",
+    "district" : "eti-osa",
+    "state" : "FCT"
+  }]
+}

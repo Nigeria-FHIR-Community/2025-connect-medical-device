@@ -1,0 +1,29 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/DeviceMetric/deviceMetric-008> a fhir:DeviceMetric ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "deviceMetric-008"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric deviceMetric-008</b></p><a name=\"deviceMetric-008\"> </a><a name=\"hcdeviceMetric-008\"> </a><p><b>type</b>: <span title=\"Codes:\">Heart Rate</span></p><p><b>unit</b>: <span title=\"Codes:\">beats/min</span></p><p><b>parent</b>: <a href=\"Bundle-DeviceAuditExample.html#urn-uuid-device-001\">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></p><p><b>operationalStatus</b>: On</p><p><b>category</b>: Measurement</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Heart Rate" ]
+  ] ; # 
+  fhir:unit [
+     fhir:text [ fhir:v "beats/min" ]
+  ] ; # 
+  fhir:parent [
+     fhir:reference [ fhir:v "urn:uuid:device-001" ]
+  ] ; # 
+  fhir:operationalStatus [ fhir:v "on"] ; # 
+  fhir:category [ fhir:v "measurement"] . # 
+
+# -------------------------------------------------------------------------------------
+

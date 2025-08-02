@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Bundle/DeviceTaskExecutionBundle> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DeviceTaskExecutionBundle"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2025-07-30T12:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:device-007"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:device-007> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:task-007"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:task-007> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:org-007"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:org-007> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:practitioner-007"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:practitioner-007> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:service-request-007"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:service-request-007> )
+  ] ) . # 
+
+<urn:uuid:device-007> a fhir:Device ;
+  fhir:id [ fhir:v "device-007"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_device-007\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device device-007</b></p><a name=\"device-007\"> </a><a name=\"hcdevice-007\"> </a><p><b>identifier</b>: <code>https://nigeria.gov.ng/devices</code>/CHEM-ANALYZER-007</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Global Diagnostics Ltd</p><p><b>modelNumber</b>: ChemX-2000</p><p><b>type</b>: <span title=\"Codes:\">Automated Chemistry Analyzer</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nigeria.gov.ng/devices"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "CHEM-ANALYZER-007" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "Global Diagnostics Ltd"] ; # 
+  fhir:modelNumber [ fhir:v "ChemX-2000"] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Automated Chemistry Analyzer" ]
+  ] . # 
+
+<urn:uuid:task-007> a fhir:Task ;
+  fhir:id [ fhir:v "task-007"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_task-007\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task task-007</b></p><a name=\"task-007\"> </a><a name=\"hctask-007\"> </a><p><b>status</b>: In Progress</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes:\">Device Calibration</span></p><p><b>for</b>: <a href=\"Device-device-007.html\">Device: identifier = https://nigeria.gov.ng/devices#CHEM-ANALYZER-007; status = active; manufacturer = Global Diagnostics Ltd; modelNumber = ChemX-2000; type = </a></p><p><b>executionPeriod</b>: 2025-07-30 11:00:00+0100 --&gt; (ongoing)</p><p><b>requester</b>: <a href=\"Practitioner/practitioner-001\">Practitioner/practitioner-001</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Device Calibration" ]
+  ] ; # 
+  fhir:for [
+     fhir:link <https://dhin.org/2025Connectathon/Device/device-007> ;
+     fhir:reference [ fhir:v "Device/device-007" ]
+  ] ; # 
+  fhir:executionPeriod [
+     fhir:start [ fhir:v "2025-07-30T11:00:00+01:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:requester [
+     fhir:link <https://dhin.org/2025Connectathon/Practitioner/practitioner-001> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-001" ]
+  ] . # 
+
+<urn:uuid:org-007> a fhir:Organization ;
+  fhir:id [ fhir:v "org-007"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_org-007\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization org-007</b></p><a name=\"org-007\"> </a><a name=\"hcorg-007\"> </a><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF001</p><p><b>name</b>: Diagnostic Research Center</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://herfama.lagos.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HF001" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Diagnostic Research Center"] . # 
+
+<urn:uuid:practitioner-007> a fhir:Practitioner ;
+  fhir:id [ fhir:v "practitioner-007"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_practitioner-007\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-007</b></p><a name=\"practitioner-007\"> </a><a name=\"hcpractitioner-007\"> </a><p><b>identifier</b>: <code>https://mdcn.gov.ng</code>/MDCN001234</p><p><b>name</b>: Ifeoma Okoye </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://mdcn.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "MDCN001234" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Okoye" ] ;
+     fhir:given ( [ fhir:v "Ifeoma" ] )
+  ] ) . # 
+
+<urn:uuid:service-request-007> a fhir:ServiceRequest ;
+  fhir:id [ fhir:v "service-request-007"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_service-request-007\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest service-request-007</b></p><a name=\"service-request-007\"> </a><a name=\"hcservice-request-007\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title=\"Codes:\">Calibration Procedure Request</span></p><p><b>subject</b>: <a href=\"Device-device-001.html\">Device: identifier = http://hospital.smartdev.com/devices#CHEM-ANA-0099; status = active; manufacturer = SmartDev; type = </a></p><p><b>authoredOn</b>: 2025-07-30</p><p><b>requester</b>: <a href=\"Organization/org-001\">Organization/org-001</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Calibration Procedure Request" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/Device/device-001> ;
+     fhir:reference [ fhir:v "Device/device-001" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2025-07-30"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <https://dhin.org/2025Connectathon/Organization/org-001> ;
+     fhir:reference [ fhir:v "Organization/org-001" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

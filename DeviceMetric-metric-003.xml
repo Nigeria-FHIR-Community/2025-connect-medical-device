@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceMetric xmlns="http://hl7.org/fhir">
+  <id value="metric-003"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DeviceMetric metric-003</b></p><a name="metric-003"> </a><a name="hcmetric-003"> </a><p><b>type</b>: <span title="Codes:">Glucose</span></p><p><b>unit</b>: <span title="Codes:">mmol/L</span></p><p><b>category</b>: Measurement</p><p><b>measurementPeriod</b>: Once per 5 minutes</p></div>
+  </text>
+  <type>
+    <text value="Glucose"/>
+  </type>
+  <unit>
+    <text value="mmol/L"/>
+  </unit>
+  <category value="measurement"/>
+  <measurementPeriod>
+    <repeat>
+      <frequency value="1"/>
+      <period value="5"/>
+      <periodUnit value="min"/>
+    </repeat>
+  </measurementPeriod>
+</DeviceMetric>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="task-007"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task task-007</b></p><a name="task-007"> </a><a name="hctask-007"> </a><p><b>status</b>: In Progress</p><p><b>intent</b>: order</p><p><b>code</b>: <span title="Codes:">Device Calibration</span></p><p><b>for</b>: <a href="Device-device-007.html">Device: identifier = https://nigeria.gov.ng/devices#CHEM-ANALYZER-007; status = active; manufacturer = Global Diagnostics Ltd; modelNumber = ChemX-2000; type = </a></p><p><b>executionPeriod</b>: 2025-07-30 11:00:00+0100 --&gt; (ongoing)</p><p><b>requester</b>: <a href="Practitioner/practitioner-001">Practitioner/practitioner-001</a></p></div>
+  </text>
+  <status value="in-progress"/>
+  <intent value="order"/>
+  <code>
+    <text value="Device Calibration"/>
+  </code>
+  <for>
+    <reference value="Device/device-007"/>
+  </for>
+  <executionPeriod>
+    <start value="2025-07-30T11:00:00+01:00"/>
+  </executionPeriod>
+  <requester>
+    <reference value="Practitioner/practitioner-001"/>
+  </requester>
+</Task>

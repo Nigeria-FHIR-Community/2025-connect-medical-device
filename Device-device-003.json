@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Device",
+  "id" : "device-003",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-003</b></p><a name=\"device-003\"> </a><a name=\"hcdevice-003\"> </a><p><b>identifier</b>: <code>http://manufacturer.com/devices</code>/CHEM-2025-001</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: BioTech Instruments Ltd.</p><p><b>serialNumber</b>: SN12345678</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>BioChemX-3000</td><td>Model name</td></tr></table><p><b>modelNumber</b>: BioChemX-3000</p><p><b>type</b>: <span title=\"Codes:\">Chemistry Analyzer</span></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://manufacturer.com/devices",
+    "value" : "CHEM-2025-001"
+  }],
+  "status" : "active",
+  "manufacturer" : "BioTech Instruments Ltd.",
+  "serialNumber" : "SN12345678",
+  "deviceName" : [{
+    "name" : "BioChemX-3000",
+    "type" : "model-name"
+  }],
+  "modelNumber" : "BioChemX-3000",
+  "type" : {
+    "text" : "Chemistry Analyzer"
+  }
+}

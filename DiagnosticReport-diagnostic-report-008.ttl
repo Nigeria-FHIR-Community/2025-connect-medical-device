@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/DiagnosticReport/diagnostic-report-008> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "diagnostic-report-008"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport diagnostic-report-008</b></p><a name=\"diagnostic-report-008\"> </a><a name=\"hcdiagnostic-report-008\"> </a><h2><span title=\"Codes:\">Vital Signs Summary</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2025-07-30 10:00:00+0100</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td/><td/></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Vital Signs Summary" ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:patient-001" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-07-30T10:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:result ( [
+     fhir:reference [ fhir:v "urn:uuid:observation-hr" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

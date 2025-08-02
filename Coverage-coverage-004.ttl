@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Coverage/coverage-004> a fhir:Coverage ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "coverage-004"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Coverage coverage-004</b></p><a name=\"coverage-004\"> </a><a name=\"hccoverage-004\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-coverage.html\">NG-Claim Coverage</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/coverage-type EHCPOL}\">EHCPOL</span></p><p><b>beneficiary</b>: <code>urn:uuid:patient-001</code></p><p><b>period</b>: 2025-01-01 --&gt; 2025-12-31</p><p><b>payor</b>: <code>urn:uuid:organization-001</code></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/coverage-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EHCPOL" ]
+     ] )
+  ] ; # 
+  fhir:beneficiary [
+     fhir:reference [ fhir:v "urn:uuid:patient-001" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-12-31"^^xsd:date ]
+  ] ; # 
+  fhir:payor ( [
+     fhir:reference [ fhir:v "urn:uuid:organization-001" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

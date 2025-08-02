@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - DHIN &amp; SON 2025 connectathon Medical Devices testing v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">DHIN &amp; SON 2025 connectathon Medical Devices testing</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - testing
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav"> 
+
+ <li> <a href="index.html" class="dropdown-toggle">Home</a></li> 
+   <li> <a href="artifacts.html" class="dropdown-toggle">Artifacts</a></li>
+  <li> <a href="search-operation.html" class="dropdown-toggle">Search and Operations</a></li> 
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">DHIN &amp; SON 2025 connectathon Medical Devices testing - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://dhin.org/2025Connectathon/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-bundle-device-audit.html"
+                  title="StructureDefinition/ng-bundle-device-audit">1-NG-Bundle: Device Audit</a>
+            </td>
+            <td>
+<p>Bundle profile capturing audit events related to device usage and operations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-bundle-device-monitoring-session.html"
+                  title="StructureDefinition/ng-bundle-device-monitoring-session">2-NG-Bundle: Device Monitoring Session</a>
+            </td>
+            <td>
+<p>A Bundle capturing device-generated data during a patient monitoring session.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-bundle-device-observation.html"
+                  title="StructureDefinition/ng-bundle-device-observation">3-NG-Bundle: Device Observation</a>
+            </td>
+            <td>
+<p>A bundle to capture observations generated by a device including device and device metric context.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-bundle-device-provenance.html"
+                  title="StructureDefinition/ng-bundle-device-provenance">4-NG-Bundle: Device Provenance</a>
+            </td>
+            <td>
+<p>A Bundle capturing provenance data for device data submission or synchronization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-bundle-device-registration.html"
+                  title="StructureDefinition/ng-bundle-device-registration">5-NG-Bundle: Device Registration</a>
+            </td>
+            <td>
+<p>Bundle for registering a new medical device with associated metadata and manufacturer organization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-bundle-device-task-execution.html"
+                  title="StructureDefinition/ng-bundle-device-task-execution">6-NG-Bundle: Device Task Execution</a>
+            </td>
+            <td>
+<p>A bundle for coordinating the execution of a task on a device including requester, execution info, and the device involved.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-audit-event.html"
+                  title="StructureDefinition/ng-audit-event">NG AuditEvent</a>
+            </td>
+            <td>
+<p>A profile for logging access and interactions with health data in Nigeria, such as prescriptions or patient records.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-communication.html"
+                  title="StructureDefinition/ng-communication">NG Communication</a>
+            </td>
+            <td>
+<p>A profile for recording formal communication exchanges such as notifications, clarifications, or feedback in health service delivery.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-device.html"
+                  title="StructureDefinition/ng-device">NG Device</a>
+            </td>
+            <td>
+<p>A profile for medical devices such as chemistry analyzers used in diagnostics.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-device-definition.html"
+                  title="StructureDefinition/ng-device-definition">NG DeviceDefinition</a>
+            </td>
+            <td>
+<p>Profile for defining medical devices such as analyzers, monitors, and diagnostic tools used in Nigerian health facilities.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-device-metric.html"
+                  title="StructureDefinition/ng-device-metric">NG DeviceMetric</a>
+            </td>
+            <td>
+<p>A profile representing a measurement channel or metric produced by a medical device.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-diagnostic-report.html"
+                  title="StructureDefinition/ng-diagnostic-report">NG DiagnosticReport</a>
+            </td>
+            <td>
+<p>A profile representing diagnostic report results in the Nigerian health system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-document-reference.html"
+                  title="StructureDefinition/ng-document-reference">NG DocumentReference</a>
+            </td>
+            <td>
+<p>A profile for referencing external or internal documents such as lab reports, discharge summaries, prescriptions, or scanned forms.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-prescription-encounter.html"
+                  title="StructureDefinition/ng-prescription-encounter">NG Encounter</a>
+            </td>
+            <td>
+<p>A profile representing patient encounters related to ePrescription.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-location.html"
+                  title="StructureDefinition/ng-location">NG Location</a>
+            </td>
+            <td>
+<p>A profile representing facility locations such as pharmacies, wards, or service points in Nigeria.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-medication.html"
+                  title="StructureDefinition/ng-medication">NG Medication</a>
+            </td>
+            <td>
+<p>A profile for medications prescribed and dispensed in Nigeria.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-medication-dispense.html"
+                  title="StructureDefinition/ng-medication-dispense">NG MedicationDispense</a>
+            </td>
+            <td>
+<p>A profile for recording dispensation of prescribed medications by a pharmacy in Nigeria.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-medication-request.html"
+                  title="StructureDefinition/ng-medication-request">NG MedicationRequest</a>
+            </td>
+            <td>
+<p>A profile for electronic prescriptions issued by Nigerian healthcare providers.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-observation-labresult.html"
+                  title="StructureDefinition/ng-observation-labresult">NG Observation - Laboratory Result</a>
+            </td>
+            <td>
+<p>A profile for representing laboratory result observations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-imm-organization.html"
+                  title="StructureDefinition/ng-imm-organization">NG Organization</a>
+            </td>
+            <td>
+<p>An organization profile representing healthcare facilities responsible for health services or other types of organizations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgPatient.html"
+                  title="StructureDefinition/NgPatient">NG Patient</a>
+            </td>
+            <td>
+<p>Nigeria Patient Profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgPractitioner.html"
+                  title="StructureDefinition/NgPractitioner">NG Practitioner</a>
+            </td>
+            <td>
+<p>Profile for a Nigerian Practitioner</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-practitionerrole.html"
+                  title="StructureDefinition/ng-practitionerrole">NG PractitionerRole</a>
+            </td>
+            <td>
+<p>A profile for defining the role of a practitioner within an organization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-provenance.html"
+                  title="StructureDefinition/ng-provenance">NG Provenance</a>
+            </td>
+            <td>
+<p>A profile for capturing metadata about creation or modification of health data in Nigeria, especially for audit and signature purposes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-claim-task.html"
+                  title="StructureDefinition/ng-claim-task">NG Task</a>
+            </td>
+            <td>
+<p>A profile for workflow and task management in ePrescription processing.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-claim-coverage.html"
+                  title="StructureDefinition/ng-claim-coverage">NG-Claim Coverage</a>
+            </td>
+            <td>
+<p>A profile capturing a patient’s insurance coverage details.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-eligibility-request.html"
+                  title="StructureDefinition/ng-eligibility-request">NG-CoverageEligibilityRequest</a>
+            </td>
+            <td>
+<p>A profile for checking patient’s eligibility for insurance services.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-gender.html" title="ValueSet/nigeria-gender">NG-Imm Gender or Sex VS</a>
+            </td>
+            <td>
+<p>Subset of HL7 administrative-gender limited to ‘male’ and ‘female’.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-facility-types.html"
+                  title="ValueSet/nigeria-facility-types">NG-Imm HealthFacility Type VS</a>
+            </td>
+            <td>
+<p>Classification of Nigerian health facilities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-lgas.html" title="ValueSet/nigeria-lgas">NG-Imm LGAs VS</a>
+            </td>
+            <td>
+<p>The administrative Local Government Areas where a person or a facility is.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-languages.html"
+                  title="ValueSet/nigeria-languages">NG-Imm Languages VS</a>
+            </td>
+            <td>
+<p>The Patient’s preferred language for communication.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-location-owner.html"
+                  title="ValueSet/nigeria-location-owner">NG-Imm Location Owner</a>
+            </td>
+            <td>
+<p>The owner of an Immunization location</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-states.html" title="ValueSet/nigeria-states">NG-Imm States VS</a>
+            </td>
+            <td>
+<p>The state where a person or a facility is.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-nigeria-wards.html" title="ValueSet/nigeria-wards">NG-Imm Wards VS</a>
+            </td>
+            <td>
+<p>The administrative Ward (within an LGA) where a person or a facility is.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-wards.html" title="CodeSystem/nigeria-wards">NG-Imm Administrative Wards CS</a>
+            </td>
+            <td>
+<p>This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-facility-type.html"
+                  title="CodeSystem/nigeria-facility-type">NG-Imm Facility Type CS</a>
+            </td>
+            <td>
+<p>A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-gender.html" title="CodeSystem/nigeria-gender">NG-Imm Gender CS</a>
+            </td>
+            <td>
+<p>The administrative gender of a person.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-lgas.html" title="CodeSystem/nigeria-lgas">NG-Imm LGAs in Nigeria CS</a>
+            </td>
+            <td>
+<p>This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-location-owner-cs.html"
+                  title="CodeSystem/nigeria-location-owner-cs">NG-Imm Location Owner CS</a>
+            </td>
+            <td>
+<p>This CodeSystem defines Immunization Location Owner.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-states.html" title="CodeSystem/nigeria-states">NG-Imm States in Nigeria CS</a>
+            </td>
+            <td>
+<p>This CodeSystem defines ward codes and names mapped to their respective States in Nigeria.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-nigeria-languages.html"
+                  title="CodeSystem/nigeria-languages">NG‑Imm Languages in Nigeria CS</a>
+            </td>
+            <td>
+<p>This CodeSystem defines codes for major languages spoken across Nigeria.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-medication-004.html" title="Medication/medication-004">Example: Amoxicillin 250mg Capsule</a>
+            </td>
+            <td>
+<p>An example medication definition for Amoxicillin.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AuditEvent-audit-003.html" title="AuditEvent/audit-003">Example: AuditEvent for Prescription Access</a>
+            </td>
+            <td>
+<p>An example AuditEvent recording a practitioner viewing a prescription.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceDefinition-chemistry-analyzer-definition.html"
+                  title="DeviceDefinition/chemistry-analyzer-definition">Example: Chemistry Analyzer Definition</a>
+            </td>
+            <td>
+<p>Example DeviceDefinition for a standard clinical chemistry analyzer used in diagnostics.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-chemistry-analyzer-device.html"
+                  title="Device/chemistry-analyzer-device">Example: Chemistry Analyzer Device</a>
+            </td>
+            <td>
+<p>Example of a medical device - Chemistry Analyzer used in laboratory diagnostics.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Coverage-coverage-004.html" title="Coverage/coverage-004">Example: Claim Coverage</a>
+            </td>
+            <td>
+<p>An example of a patient’s insurance coverage details.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Communication-example-communication.html"
+                  title="Communication/example-communication">Example: Communication from Pharmacy to Prescriber</a>
+            </td>
+            <td>
+<p>An example communication sent from a pharmacist to a doctor requesting clarification on a prescription.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CoverageEligibilityRequest-eligibility-request-004.html"
+                  title="CoverageEligibilityRequest/eligibility-request-004">Example: Coverage Eligibility Request</a>
+            </td>
+            <td>
+<p>An example of a patient’s request to check insurance service eligibility.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-DeviceAuditExample.html" title="Bundle/DeviceAuditExample">Example: Device Audit Bundle</a>
+            </td>
+            <td>
+<p>An example bundle for auditing device events.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-DeviceMonitoringSessionExample.html"
+                  title="Bundle/DeviceMonitoringSessionExample">Example: Device Monitoring Session</a>
+            </td>
+            <td>
+<p>An example bundle for a vital signs monitoring session</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-DeviceObservationBundleExample.html"
+                  title="Bundle/DeviceObservationBundleExample">Example: Device Observation Bundle</a>
+            </td>
+            <td>
+<p>An example of a device sending observation data with associated metadata.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-DeviceProvenanceBundleExample.html"
+                  title="Bundle/DeviceProvenanceBundleExample">Example: Device Provenance Bundle</a>
+            </td>
+            <td>
+<p>An example bundle showing provenance for a submitted device record.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-DeviceRegistrationBundle001.html"
+                  title="Bundle/DeviceRegistrationBundle001">Example: Device Registration Bundle</a>
+            </td>
+            <td>
+<p>An example bundle used to register a blood chemistry analyzer with regulatory authority.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-DeviceTaskExecutionBundle.html"
+                  title="Bundle/DeviceTaskExecutionBundle">Example: Device Task Execution Bundle</a>
+            </td>
+            <td>
+<p>Example bundle for tracking execution of a calibration task on a device.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-lab-observation-004.html"
+                  title="Observation/lab-observation-004">Example: Lab Result Observation</a>
+            </td>
+            <td>
+<p>An example of a laboratory result observation for hemoglobin.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationDispense-dispense-004.html"
+                  title="MedicationDispense/dispense-004">Example: Medication Dispense</a>
+            </td>
+            <td>
+<p>An example of a pharmacist dispensing Amoxicillin 250mg.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-medicationrequest-004.html"
+                  title="MedicationRequest/medicationrequest-004">Example: MedicationRequest</a>
+            </td>
+            <td>
+<p>An example of an electronic prescription for Amoxicillin.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-devicemetric-004.html"
+                  title="DeviceMetric/devicemetric-004">Example: NG DeviceMetric</a>
+            </td>
+            <td>
+<p>An example metric from a chemistry analyzer measuring glucose level.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-ExampleNgDiagnosticReport.html"
+                  title="DiagnosticReport/ExampleNgDiagnosticReport">Example: NG Diagnostic Report</a>
+            </td>
+            <td>
+<p>An example diagnostic report for a blood chemistry test</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organization-004.html"
+                  title="Organization/organization-004">Example: NG Organization</a>
+            </td>
+            <td>
+<p>An example of a healthcare facility organization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-004.html" title="Patient/patient-004">Example: NG Patient</a>
+            </td>
+            <td>
+<p>An example instance of a Nigerian patient profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-004.html"
+                  title="Practitioner/practitioner-004">Example: NG Practitioner</a>
+            </td>
+            <td>
+<p>An example of a Nigerian healthcare practitioner.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-practitioner-role-004.html"
+                  title="PractitionerRole/practitioner-role-004">Example: NG PractitionerRole</a>
+            </td>
+            <td>
+<p>An example defining the role of a practitioner within a Nigerian healthcare organization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-example-location.html" title="Location/example-location">Example: Pharmacy Location</a>
+            </td>
+            <td>
+<p>An example location representing a pharmacy branch.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-encounter-004.html" title="Encounter/encounter-004">Example: Prescription Encounter</a>
+            </td>
+            <td>
+<p>An example encounter related to an ePrescription event.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-provenance-004.html" title="Provenance/provenance-004">Example: Provenance of ePrescription</a>
+            </td>
+            <td>
+<p>An example of provenance capturing the author and timestamp of a prescription.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-example-document-reference.html"
+                  title="DocumentReference/example-document-reference">Example: Scanned Discharge Summary</a>
+            </td>
+            <td>
+<p>An example of a scanned discharge summary document reference.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-example-claim-task.html" title="Task/example-claim-task">Example: Task for Dispensing Prescription</a>
+            </td>
+            <td>
+<p>A task representing the assignment to dispense a prescription in an ePrescription workflow.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-device-001.html" title="Device/device-001">device-001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-device-003.html" title="Device/device-003">device-003</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-device-006.html" title="Device/device-006">device-006</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-device-007.html" title="Device/device-007">device-007</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-device-008.html" title="Device/device-008">device-008</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceDefinition-device-def-006.html"
+                  title="DeviceDefinition/device-def-006">device-def-006</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-deviceMetric-008.html"
+                  title="DeviceMetric/deviceMetric-008">deviceMetric-008</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-diagnostic-report-008.html"
+                  title="DiagnosticReport/diagnostic-report-008">diagnostic-report-008</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-encounter-008.html" title="Encounter/encounter-008">encounter-008</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceMetric-metric-003.html" title="DeviceMetric/metric-003">metric-003</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-003.html"
+                  title="Observation/observation-003">observation-003</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-observation-hr.html"
+                  title="Observation/observation-hr">observation-hr</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-org-005.html" title="Organization/org-005">org-005</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-org-007.html" title="Organization/org-007">org-007</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-org-manufacturer.html"
+                  title="Organization/org-manufacturer">org-manufacturer</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-005.html" title="Patient/patient-005">patient-005</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-008.html" title="Patient/patient-008">patient-008</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-007.html"
+                  title="Practitioner/practitioner-007">practitioner-007</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-provenance-005.html" title="Provenance/provenance-005">provenance-005</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-service-request-007.html"
+                  title="ServiceRequest/service-request-007">service-request-007</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-task-007.html" title="Task/task-007">task-007</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.dhin-hie.org/IGs">https://www.dhin-hie.org</a>.  Package 2025connectathonMedicalDevices#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Aug 2, 2025 11:56+0100">2025-08-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

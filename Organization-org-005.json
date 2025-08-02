@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Organization",
+  "id" : "org-005",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-005</b></p><a name=\"org-005\"> </a><a name=\"hcorg-005\"> </a><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF009</p><p><b>name</b>: Faith Medical Diagnostics</p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://herfama.lagos.ng",
+    "value" : "HF009"
+  }],
+  "name" : "Faith Medical Diagnostics"
+}

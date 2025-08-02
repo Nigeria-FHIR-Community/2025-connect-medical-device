@@ -1,0 +1,83 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "DeviceObservationBundleExample",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation"]
+  },
+  "type" : "collection",
+  "timestamp" : "2025-07-30T08:00:00+01:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:device-003",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "device-003",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_device-003\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device device-003</b></p><a name=\"device-003\"> </a><a name=\"hcdevice-003\"> </a><p><b>identifier</b>: <code>http://manufacturer.com/devices</code>/CHEM-2025-001</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: BioTech Instruments Ltd.</p><p><b>serialNumber</b>: SN12345678</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>BioChemX-3000</td><td>Model name</td></tr></table><p><b>modelNumber</b>: BioChemX-3000</p><p><b>type</b>: <span title=\"Codes:\">Chemistry Analyzer</span></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://manufacturer.com/devices",
+        "value" : "CHEM-2025-001"
+      }],
+      "status" : "active",
+      "manufacturer" : "BioTech Instruments Ltd.",
+      "serialNumber" : "SN12345678",
+      "deviceName" : [{
+        "name" : "BioChemX-3000",
+        "type" : "model-name"
+      }],
+      "modelNumber" : "BioChemX-3000",
+      "type" : {
+        "text" : "Chemistry Analyzer"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:observation-003",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-003",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-003\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-003</b></p><a name=\"observation-003\"> </a><a name=\"hcobservation-003\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">Glucose Level</span></p><p><b>effective</b>: 2025-07-30 07:50:00+0100</p><p><b>value</b>: 6.2 mmol/L</p><p><b>device</b>: <a href=\"Bundle-DeviceMonitoringSessionExample.html#urn-uuid-device-003\">Bundle: type = collection; timestamp = 2025-07-30 10:00:00+0100</a></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "text" : "Glucose Level"
+      },
+      "effectiveDateTime" : "2025-07-30T07:50:00+01:00",
+      "valueQuantity" : {
+        "value" : 6.2,
+        "unit" : "mmol/L"
+      },
+      "device" : {
+        "reference" : "urn:uuid:device-003"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:metric-003",
+    "resource" : {
+      "resourceType" : "DeviceMetric",
+      "id" : "metric-003",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DeviceMetric_metric-003\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric metric-003</b></p><a name=\"metric-003\"> </a><a name=\"hcmetric-003\"> </a><p><b>type</b>: <span title=\"Codes:\">Glucose</span></p><p><b>unit</b>: <span title=\"Codes:\">mmol/L</span></p><p><b>category</b>: Measurement</p><p><b>measurementPeriod</b>: Once per 5 minutes</p></div>"
+      },
+      "type" : {
+        "text" : "Glucose"
+      },
+      "unit" : {
+        "text" : "mmol/L"
+      },
+      "category" : "measurement",
+      "measurementPeriod" : {
+        "repeat" : {
+          "frequency" : 1,
+          "period" : 5,
+          "periodUnit" : "min"
+        }
+      }
+    }
+  }]
+}

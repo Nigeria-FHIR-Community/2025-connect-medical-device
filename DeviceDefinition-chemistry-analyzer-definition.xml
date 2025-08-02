@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceDefinition xmlns="http://hl7.org/fhir">
+  <id value="chemistry-analyzer-definition"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-device-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DeviceDefinition chemistry-analyzer-definition</b></p><a name="chemistry-analyzer-definition"> </a><a name="hcchemistry-analyzer-definition"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-device-definition.html">NG DeviceDefinition</a></p></div><p><b>identifier</b>: <code>http://example.org/devices</code>/CHEM-ANLZ-2025</p><p><b>manufacturer</b>: Abbott Laboratories</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>ARCHITECT c4000</td><td>Model name</td></tr></table><p><b>modelNumber</b>: c4000</p><p><b>type</b>: <span title="Codes:">Clinical Chemistry Analyzer</span></p><h3>Specializations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td style="display: none">*</td><td>IVD</td><td>ISO 15189</td></tr></table><p><b>version</b>: 3.1.0</p><h3>Capabilities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Can run assays for electrolytes, enzymes, and metabolites</span></td><td><span title="Codes:">BiochemicalAnalysis</span></td></tr></table><h3>Properties</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>ValueQuantity</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Sample throughput</span></td><td>800 tests/hour</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://example.org/devices"/>
+    <value value="CHEM-ANLZ-2025"/>
+  </identifier>
+  <manufacturerString value="Abbott Laboratories"/>
+  <deviceName>
+    <name value="ARCHITECT c4000"/>
+    <type value="model-name"/>
+  </deviceName>
+  <modelNumber value="c4000"/>
+  <type>
+    <text value="Clinical Chemistry Analyzer"/>
+  </type>
+  <specialization>
+    <systemType value="IVD"/>
+    <version value="ISO 15189"/>
+  </specialization>
+  <version value="3.1.0"/>
+  <capability>
+    <type>
+      <text value="Can run assays for electrolytes, enzymes, and metabolites"/>
+    </type>
+    <description>
+      <coding>
+        <code value="BiochemicalAnalysis"/>
+      </coding>
+    </description>
+  </capability>
+  <property>
+    <type>
+      <text value="Sample throughput"/>
+    </type>
+    <valueQuantity>
+      <value value="800"/>
+      <unit value="tests/hour"/>
+    </valueQuantity>
+  </property>
+</DeviceDefinition>

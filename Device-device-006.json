@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Device",
+  "id" : "device-006",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-device"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-006</b></p><a name=\"device-006\"> </a><a name=\"hcdevice-006\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-device.html\">NG Device</a></p></div><p><b>identifier</b>: <code>GE</code>/hsytsy</p><p><b>definition</b>: <a href=\"Bundle-DeviceRegistrationBundle001.html#urn-uuid-device-def-001\">Bundle: type = collection; timestamp = 2025-07-30 10:15:00+0100</a></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Abbott Diagnostics</p><p><b>serialNumber</b>: SN123456789</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>ARCHITECT c4000</td><td>Manufacturer name</td></tr></table><p><b>modelNumber</b>: C4000</p><p><b>type</b>: <span title=\"Codes:\">chemistryAnalyzer</span></p></div>"
+  },
+  "identifier" : [{
+    "system" : "GE",
+    "value" : "hsytsy"
+  }],
+  "definition" : {
+    "reference" : "urn:uuid:device-def-001"
+  },
+  "status" : "active",
+  "manufacturer" : "Abbott Diagnostics",
+  "serialNumber" : "SN123456789",
+  "deviceName" : [{
+    "name" : "ARCHITECT c4000",
+    "type" : "manufacturer-name"
+  }],
+  "modelNumber" : "C4000",
+  "type" : {
+    "coding" : [{
+      "code" : "chemistryAnalyzer"
+    }]
+  }
+}

@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Device/chemistry-analyzer-device> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "chemistry-analyzer-device"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-device"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-device>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device chemistry-analyzer-device</b></p><a name=\"chemistry-analyzer-device\"> </a><a name=\"hcchemistry-analyzer-device\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-device.html\">NG Device</a></p></div><p><b>identifier</b>: <code>https://son.gov.ng/device-id</code>/CHEM-ANLZR-0001</p><h3>UdiCarriers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DeviceIdentifier</b></td></tr><tr><td style=\"display: none\">*</td><td>12345678901234</td></tr></table><p><b>status</b>: Active</p><p><b>manufacturer</b>: Roche Diagnostics</p><p><b>manufactureDate</b>: 2023-06-15</p><p><b>expirationDate</b>: 2028-06-15</p><p><b>lotNumber</b>: LCHM2023A</p><p><b>serialNumber</b>: RC-2023-00987</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Roche Cobas Chemistry Analyzer</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: Cobas C311</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 408467006}\">Clinical chemistry analyzer</span></p><p><b>note</b>: </p><blockquote><div><p>Calibrated on 2025-01-10. Scheduled for maintenance every 6 months.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://son.gov.ng/device-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "CHEM-ANLZR-0001" ]
+  ] ) ; # 
+  fhir:udiCarrier ( [
+     fhir:deviceIdentifier [ fhir:v "12345678901234" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "Roche Diagnostics"] ; # 
+  fhir:manufactureDate [ fhir:v "2023-06-15"^^xsd:date] ; # 
+  fhir:expirationDate [ fhir:v "2028-06-15"^^xsd:date] ; # 
+  fhir:lotNumber [ fhir:v "LCHM2023A"] ; # 
+  fhir:serialNumber [ fhir:v "RC-2023-00987"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Roche Cobas Chemistry Analyzer" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "Cobas C311"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:408467006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "408467006" ] ;
+       fhir:display [ fhir:v "Clinical chemistry analyzer" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Calibrated on 2025-01-10. Scheduled for maintenance every 6 months." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

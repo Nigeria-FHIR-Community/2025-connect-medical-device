@@ -1,0 +1,113 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "DeviceTaskExecutionBundle",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution"]
+  },
+  "type" : "collection",
+  "timestamp" : "2025-07-30T12:00:00+01:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:device-007",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "device-007",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_device-007\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device device-007</b></p><a name=\"device-007\"> </a><a name=\"hcdevice-007\"> </a><p><b>identifier</b>: <code>https://nigeria.gov.ng/devices</code>/CHEM-ANALYZER-007</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Global Diagnostics Ltd</p><p><b>modelNumber</b>: ChemX-2000</p><p><b>type</b>: <span title=\"Codes:\">Automated Chemistry Analyzer</span></p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://nigeria.gov.ng/devices",
+        "value" : "CHEM-ANALYZER-007"
+      }],
+      "status" : "active",
+      "manufacturer" : "Global Diagnostics Ltd",
+      "modelNumber" : "ChemX-2000",
+      "type" : {
+        "text" : "Automated Chemistry Analyzer"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:task-007",
+    "resource" : {
+      "resourceType" : "Task",
+      "id" : "task-007",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_task-007\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task task-007</b></p><a name=\"task-007\"> </a><a name=\"hctask-007\"> </a><p><b>status</b>: In Progress</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes:\">Device Calibration</span></p><p><b>for</b>: <a href=\"Device-device-007.html\">Device: identifier = https://nigeria.gov.ng/devices#CHEM-ANALYZER-007; status = active; manufacturer = Global Diagnostics Ltd; modelNumber = ChemX-2000; type = </a></p><p><b>executionPeriod</b>: 2025-07-30 11:00:00+0100 --&gt; (ongoing)</p><p><b>requester</b>: <a href=\"Practitioner/practitioner-001\">Practitioner/practitioner-001</a></p></div>"
+      },
+      "status" : "in-progress",
+      "intent" : "order",
+      "code" : {
+        "text" : "Device Calibration"
+      },
+      "for" : {
+        "reference" : "Device/device-007"
+      },
+      "executionPeriod" : {
+        "start" : "2025-07-30T11:00:00+01:00"
+      },
+      "requester" : {
+        "reference" : "Practitioner/practitioner-001"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:org-007",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "org-007",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_org-007\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization org-007</b></p><a name=\"org-007\"> </a><a name=\"hcorg-007\"> </a><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF001</p><p><b>name</b>: Diagnostic Research Center</p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://herfama.lagos.ng",
+        "value" : "HF001"
+      }],
+      "name" : "Diagnostic Research Center"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:practitioner-007",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "practitioner-007",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_practitioner-007\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-007</b></p><a name=\"practitioner-007\"> </a><a name=\"hcpractitioner-007\"> </a><p><b>identifier</b>: <code>https://mdcn.gov.ng</code>/MDCN001234</p><p><b>name</b>: Ifeoma Okoye </p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://mdcn.gov.ng",
+        "value" : "MDCN001234"
+      }],
+      "name" : [{
+        "family" : "Okoye",
+        "given" : ["Ifeoma"]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:service-request-007",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "service-request-007",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_service-request-007\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest service-request-007</b></p><a name=\"service-request-007\"> </a><a name=\"hcservice-request-007\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title=\"Codes:\">Calibration Procedure Request</span></p><p><b>subject</b>: <a href=\"Device-device-001.html\">Device: identifier = http://hospital.smartdev.com/devices#CHEM-ANA-0099; status = active; manufacturer = SmartDev; type = </a></p><p><b>authoredOn</b>: 2025-07-30</p><p><b>requester</b>: <a href=\"Organization/org-001\">Organization/org-001</a></p></div>"
+      },
+      "status" : "active",
+      "intent" : "order",
+      "code" : {
+        "text" : "Calibration Procedure Request"
+      },
+      "subject" : {
+        "reference" : "Device/device-001"
+      },
+      "authoredOn" : "2025-07-30",
+      "requester" : {
+        "reference" : "Organization/org-001"
+      }
+    }
+  }]
+}

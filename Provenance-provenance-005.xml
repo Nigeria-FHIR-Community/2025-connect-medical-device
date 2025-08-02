@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="provenance-005"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Provenance provenance-005</b></p><a name="provenance-005"> </a><a name="hcprovenance-005"> </a><p>Provenance for <code>urn:uuid:device-005</code></p><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2025-07-30 11:25:00+0100</td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title="Codes:">Device Registration Service</span></td><td>AutoSync Service</td></tr></table></div>
+  </text>
+  <target>
+    <reference value="urn:uuid:device-005"/>
+  </target>
+  <recorded value="2025-07-30T11:25:00+01:00"/>
+  <agent>
+    <type>
+      <text value="Device Registration Service"/>
+    </type>
+    <who>
+      <display value="AutoSync Service"/>
+    </who>
+  </agent>
+  <entity>
+    <role value="source"/>
+    <what>
+      <display value="Device Onboarding CSV"/>
+    </what>
+  </entity>
+</Provenance>

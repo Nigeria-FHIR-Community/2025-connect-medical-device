@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/DeviceDefinition/chemistry-analyzer-definition> a fhir:DeviceDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "chemistry-analyzer-definition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-device-definition"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-device-definition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceDefinition chemistry-analyzer-definition</b></p><a name=\"chemistry-analyzer-definition\"> </a><a name=\"hcchemistry-analyzer-definition\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-device-definition.html\">NG DeviceDefinition</a></p></div><p><b>identifier</b>: <code>http://example.org/devices</code>/CHEM-ANLZ-2025</p><p><b>manufacturer</b>: Abbott Laboratories</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>ARCHITECT c4000</td><td>Model name</td></tr></table><p><b>modelNumber</b>: c4000</p><p><b>type</b>: <span title=\"Codes:\">Clinical Chemistry Analyzer</span></p><h3>Specializations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>SystemType</b></td><td><b>Version</b></td></tr><tr><td style=\"display: none\">*</td><td>IVD</td><td>ISO 15189</td></tr></table><p><b>version</b>: 3.1.0</p><h3>Capabilities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Can run assays for electrolytes, enzymes, and metabolites</span></td><td><span title=\"Codes:\">BiochemicalAnalysis</span></td></tr></table><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>ValueQuantity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Sample throughput</span></td><td>800 tests/hour</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://example.org/devices"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "CHEM-ANLZ-2025" ]
+  ] ) ; # 
+  fhir:manufacturer [
+     a fhir:string ;
+     fhir:v "Abbott Laboratories"
+  ] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "ARCHITECT c4000" ] ;
+     fhir:type [ fhir:v "model-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "c4000"] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Clinical Chemistry Analyzer" ]
+  ] ; # 
+  fhir:specialization ( [
+     fhir:systemType [ fhir:v "IVD" ] ;
+     fhir:version [ fhir:v "ISO 15189" ]
+  ] ) ; # 
+  fhir:version ( [ fhir:v "3.1.0"] ) ; # 
+  fhir:capability ( [
+     fhir:type [
+       fhir:text [ fhir:v "Can run assays for electrolytes, enzymes, and metabolites" ]
+     ] ;
+     fhir:description ( [
+       fhir:coding ( [
+         fhir:code [ fhir:v "BiochemicalAnalysis" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:text [ fhir:v "Sample throughput" ]
+     ] ;
+     fhir:valueQuantity ( [
+       fhir:value [ fhir:v "800"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "tests/hour" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

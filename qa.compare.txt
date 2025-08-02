@@ -1,0 +1,636 @@
+DHINandSON2025connectathonMedicalDevices : Validation Results
+=========================================
+
+err = 274, warn = 133, info = 9
+$--
+Generated $--. FHIR version $-- for 2025connectathonMedicalDevices#$-- (canonical = https://dhin.org/2025Connectathon)
+ Build Errors : 33 / 25 / 0
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/AuditEvent-audit-003 : 6 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Bundle-DeviceAuditExample : 16 / 1 / 5
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Bundle-DeviceMonitoringSessionExample : 52 / 10 / 8
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Bundle-DeviceObservationBundleExample : 15 / 5 / 4
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Bundle-DeviceProvenanceBundleExample : 26 / 4 / 5
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Bundle-DeviceRegistrationBundle001 : 15 / 9 / 9
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Bundle-DeviceTaskExecutionBundle : 37 / 3 / 6
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/CodeSystem-nigeria-facility-type : 0 / 2 / 2
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/CodeSystem-nigeria-gender : 2 / 4 / 2
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/CodeSystem-nigeria-languages : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/CodeSystem-nigeria-lgas : 0 / 2 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/CodeSystem-nigeria-location-owner-cs : 0 / 2 / 2
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/CodeSystem-nigeria-states : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/CodeSystem-nigeria-wards : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Communication-example-communication : 6 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Coverage-coverage-004 : 3 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/CoverageEligibilityRequest-eligibility-request-004 : 6 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Device-chemistry-analyzer-device : 1 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Device-device-001 : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Device-device-003 : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Device-device-006 : 1 / 2 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Device-device-007 : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Device-device-008 : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/DeviceDefinition-chemistry-analyzer-definition : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/DeviceDefinition-device-def-006 : 1 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/DeviceMetric-deviceMetric-008 : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/DeviceMetric-devicemetric-004 : 2 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/DeviceMetric-metric-003 : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/DiagnosticReport-ExampleNgDiagnosticReport : 6 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/DiagnosticReport-diagnostic-report-008 : 1 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/DocumentReference-example-document-reference : 10 / 2 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Encounter-encounter-004 : 4 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Encounter-encounter-008 : 1 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/ImplementationGuide-2025connectathonMedicalDevices : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Location-example-location : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Medication-medication-004 : 1 / 2 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/MedicationDispense-dispense-004 : 7 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/MedicationRequest-medicationrequest-004 : 5 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Observation-lab-observation-004 : 4 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Observation-observation-003 : 0 / 2 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Observation-observation-hr : 1 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Organization-org-005 : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Organization-org-007 : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Organization-org-manufacturer : 5 / 2 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Organization-organization-004 : 5 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Patient-patient-004 : 8 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Patient-patient-005 : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Patient-patient-008 : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Practitioner-practitioner-004 : 2 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Practitioner-practitioner-007 : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/PractitionerRole-practitioner-role-004 : 5 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Provenance-provenance-004 : 6 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Provenance-provenance-005 : 1 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/ServiceRequest-service-request-007 : 2 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-NgPatient : 1 / 0 / 2
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-NgPractitioner : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-audit-event : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-bundle-device-audit : 0 / 3 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-bundle-device-monitoring-session : 0 / 6 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-bundle-device-observation : 0 / 3 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-bundle-device-provenance : 0 / 4 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-bundle-device-registration : 0 / 4 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-bundle-device-task-execution : 0 / 5 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-claim-coverage : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-claim-task : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-communication : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-device : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-device-definition : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-device-metric : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-diagnostic-report : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-document-reference : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-eligibility-request : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-imm-organization : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-location : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-medication : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-medication-dispense : 0 / 0 / 2
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-medication-request : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-observation-labresult : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-practitionerrole : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-prescription-encounter : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/StructureDefinition-ng-provenance : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Task-example-claim-task : 6 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/Task-task-007 : 2 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/ValueSet-nigeria-facility-types : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/ValueSet-nigeria-gender : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/ValueSet-nigeria-languages : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/ValueSet-nigeria-lgas : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/ValueSet-nigeria-location-owner : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/ValueSet-nigeria-states : 0 / 1 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/MEDICAL-DEVICES/2025-connect-medical-device/fsh-generated/resources/ValueSet-nigeria-wards : 0 / 1 / 1
+</table>
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/device-001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/device-003.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/device-006.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/device-007.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/device-008.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource DeviceDefinition/device-def-006.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource DeviceMetric/deviceMetric-008.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource DiagnosticReport/diagnostic-report-008.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/encounter-008.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource DeviceMetric/metric-003.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/observation-003.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/observation-hr.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-005.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-007.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-manufacturer.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient-005.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patient-008.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/practitioner-007.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/provenance-005.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/service-request-007.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/task-007.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: package.tgz: Error converting pacakge to R4B: Error processing example/Bundle-DeviceAuditExample.json: Unknown DeviceNameType code 'minjirya'
+ERROR: AuditEvent-audit-003.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 991: The link 'Practitioner/practitioner-001' for "Practitioner/practitioner-001" cannot be resolved
+ERROR: AuditEvent-audit-003.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1277: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: AuditEvent-audit-003.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1518: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
+ERROR: Bundle-DeviceTaskExecutionBundle.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 168, column 1866: The link 'Practitioner/practitioner-001' for "Practitioner/practitioner-001" cannot be resolved
+ERROR: Bundle-DeviceTaskExecutionBundle.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 168, column 3655: The link 'Organization/org-001' for "Organization/org-001" cannot be resolved
+ERROR: Communication-example-communication.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 603: The link 'Patient/patient-001' for "Patient/patient-001" cannot be resolved
+ERROR: Communication-example-communication.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 773: The link 'Practitioner/practitioner-001' for "Practitioner/practitioner-001" cannot be resolved
+ERROR: Communication-example-communication.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 868: The link 'Practitioner/pharmacist-001' for "Practitioner/pharmacist-001" cannot be resolved
+ERROR: DiagnosticReport-ExampleNgDiagnosticReport.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 756: The link 'Organization/org-lab' for "Organization/org-lab" cannot be resolved
+ERROR: DocumentReference-example-document-reference.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 747: The link 'Patient/patient-001' for "Patient/patient-001" cannot be resolved
+ERROR: DocumentReference-example-document-reference.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 866: The link 'Practitioner/practitioner-001' for "Practitioner/practitioner-001" cannot be resolved
+ERROR: DocumentReference-example-document-reference.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 964: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: DocumentReference-example-document-reference.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1897: The link 'Encounter/encounter-001' for "Encounter/encounter-001" cannot be resolved
+ERROR: Encounter-encounter-004.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 599: The link 'Patient/patient-001' for "Patient/patient-001" cannot be resolved
+ERROR: Encounter-encounter-004.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 860: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: MedicationDispense-dispense-004.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 599: The link 'Patient/patient-001' for "Patient/patient-001" cannot be resolved
+ERROR: MedicationDispense-dispense-004.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 675: The link 'Encounter/example-encounter' for "Encounter/example-encounter" cannot be resolved
+ERROR: MedicationDispense-dispense-004.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 889: The link 'Practitioner/pharmacist-001' for "Practitioner/pharmacist-001" cannot be resolved
+ERROR: Observation-lab-observation-004.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 734: The link 'Patient/patient-001' for "Patient/patient-001" cannot be resolved
+ERROR: Observation-lab-observation-004.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 861: The link 'Practitioner/practitioner-001' for "Practitioner/practitioner-001" cannot be resolved
+ERROR: Practitioner-practitioner-004.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 892: The link 'Organization/organization-001' for "Organization/organization-001" cannot be resolved
+ERROR: PractitionerRole-practitioner-role-004.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 484: The link 'Practitioner/practitioner-001' for "Practitioner/practitioner-001" cannot be resolved
+ERROR: PractitionerRole-practitioner-role-004.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 585: The link 'Organization/organization-001' for "Organization/organization-001" cannot be resolved
+ERROR: Provenance-provenance-004.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 426: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
+ERROR: Provenance-provenance-004.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1125: The link 'Practitioner/practitioner-001' for "Practitioner/practitioner-001" cannot be resolved
+ERROR: Provenance-provenance-004.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1207: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: ServiceRequest-service-request-007.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 489: The link 'Organization/org-001' for "Organization/org-001" cannot be resolved
+ERROR: Task-example-claim-task.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 653: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
+ERROR: Task-example-claim-task.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 853: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: Task-example-claim-task.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 939: The link 'Practitioner/pharmacist-001' for "Practitioner/pharmacist-001" cannot be resolved
+ERROR: Task-task-007.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 531: The link 'Practitioner/practitioner-001' for "Practitioner/practitioner-001" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/AuditEvent-audit-003.json ==
+ERROR: AuditEvent/audit-003: AuditEvent.agent[0].who: Unable to resolve resource with reference 'Practitioner/practitioner-001'
+ERROR: AuditEvent/audit-003: AuditEvent.source.observer: Unable to resolve resource with reference 'Organization/org-hospital'
+ERROR: AuditEvent/audit-003: AuditEvent.entity[0].what: Unable to resolve resource with reference 'MedicationRequest/example-medication-request'
+WARNING: AuditEvent/audit-003: AuditEvent.entity[0].type: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: AuditEvent.text.div: Hyperlink 'Practitioner/practitioner-001' at 'div/table/tr/td/a' for 'Practitioner/practitioner-001' does not resolve
+ERROR: AuditEvent.text.div: Hyperlink 'Organization/org-hospital' at 'div/table/tr/td/a' for 'Organization/org-hospital' does not resolve
+ERROR: AuditEvent.text.div: Hyperlink 'MedicationRequest/example-medication-request' at 'div/table/tr/td/a' for 'MedicationRequest/example-medication-request' does not resolve
+== fsh-generated/resources/Bundle-DeviceAuditExample.json ==
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit|0.1.0, Element matches more than one slice - auditEvent, device
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit|0.1.0, Element matches more than one slice - auditEvent, device
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit|0.1.0, Element matches more than one slice - auditEvent, device
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit|0.1.0, Element matches more than one slice - auditEvent, organization
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit|0.1.0, Element matches more than one slice - auditEvent, organization
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit|0.1.0, Element matches more than one slice - auditEvent, organization
+ERROR: Bundle/DeviceAuditExample: Bundle: Slice 'Bundle.entry:device': a matching slice is required, but not found (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[0].fullUrl: UUIDs must be valid and lowercase (audit-001)
+INFORMATION: Bundle/DeviceAuditExample: Bundle.entry[0].resource/*AuditEvent/null*/.agent[0].who: Details for urn:uuid:device-001 matching against profile http://hl7.org/fhir/StructureDefinition/Device|4.0.1
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[1].fullUrl: UUIDs must be valid and lowercase (device-001)
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[1].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit|0.1.0' definition allows for the type AuditEvent but found type Device
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[1].resource/*Device/null*/: The type 'Device' is not valid - no resources allowed here (allowed = AuditEvent)
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[1].resource/*Device/null*/.deviceName[0].type: The System URI could not be determined for the code 'minjirya' in the ValueSet 'http://hl7.org/fhir/ValueSet/device-nametype|4.0.1'
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[1].resource/*Device/null*/.deviceName[0].type: The value provided ('minjirya') was not found in the value set 'DeviceNameType' (http://hl7.org/fhir/ValueSet/device-nametype|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'minjirya' in the ValueSet 'http://hl7.org/fhir/ValueSet/device-nametype|4.0.1'; The provided code '#minjirya' was not found in the value set 'http://hl7.org/fhir/ValueSet/device-nametype|4.0.1')
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[2].fullUrl: UUIDs must be valid and lowercase (org-001)
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[2].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit|0.1.0' definition allows for the type AuditEvent but found type Organization
+ERROR: Bundle/DeviceAuditExample: Bundle.entry[2].resource/*Organization/null*/: The type 'Organization' is not valid - no resources allowed here (allowed = AuditEvent)
+WARNING: Bundle/DeviceAuditExample: Bundle.entry[2].resource/*Organization/null*/.identifier[0].system: No definition could be found for URL value 'https://herfama.lagos.ng'
+== fsh-generated/resources/Bundle-DeviceMonitoringSessionExample.json ==
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, deviceMetric
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, deviceMetric
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, deviceMetric
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, deviceMetric
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[4]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, deviceMetric
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[5]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, deviceMetric
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, observation
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, observation
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, observation
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, observation
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[4]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, observation
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[5]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, observation
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, diagnosticReport
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, diagnosticReport
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, diagnosticReport
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, diagnosticReport
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[4]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, diagnosticReport
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[5]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, diagnosticReport
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, patient
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, patient
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, patient
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, patient
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[4]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, patient
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[5]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, patient
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, encounter
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, encounter
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, encounter
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, encounter
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[4]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, encounter
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[5]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0, Element matches more than one slice - device, encounter
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle: Bundle.entry:device: max allowed = 1, but found 6 (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0)
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle: Slice 'Bundle.entry:observation': a matching slice is required, but not found (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle: Slice 'Bundle.entry:patient': a matching slice is required, but not found (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[0].fullUrl: UUIDs must be valid and lowercase (device-003)
+WARNING: Bundle/DeviceMonitoringSessionExample: Bundle.entry[0].resource/*Device/device-008*/.identifier[0].system: No definition could be found for URL value 'http://hospital.smartdev.com/devices'
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[1].fullUrl: UUIDs must be valid and lowercase (deviceMetric-003)
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[1].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0' definition allows for the type Device but found type DeviceMetric
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[1].resource/*DeviceMetric/deviceMetric-008*/: The type 'DeviceMetric' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceMonitoringSessionExample: Bundle.entry[1].resource/*DeviceMetric/deviceMetric-008*/.parent: URN reference is not locally contained within the bundle urn:uuid:device-001
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2].fullUrl: UUIDs must be valid and lowercase (observation-hr)
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0' definition allows for the type Device but found type Observation
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2].resource/*Observation/observation-hr*/: The type 'Observation' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2].resource/*Observation/observation-hr*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2].resource/*Observation/observation-hr*/.subject: URN reference is not locally contained within the bundle urn:uuid:patient-001
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2].resource/*Observation/observation-hr*/.subject: Unable to resolve resource with reference 'urn:uuid:patient-001'
+WARNING: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2].resource/*Observation/observation-hr*/.device: URN reference is not locally contained within the bundle urn:uuid:device-001
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[3].fullUrl: UUIDs must be valid and lowercase (diagnostic-report-003)
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[3].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0' definition allows for the type Device but found type DiagnosticReport
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[3].resource/*DiagnosticReport/diagnostic-report-008*/: The type 'DiagnosticReport' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceMonitoringSessionExample: Bundle.entry[3].resource/*DiagnosticReport/diagnostic-report-008*/.subject: URN reference is not locally contained within the bundle urn:uuid:patient-001
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[3].resource/*DiagnosticReport/diagnostic-report-008*/.subject: Unable to resolve resource with reference 'urn:uuid:patient-001'
+INFORMATION: Bundle/DeviceMonitoringSessionExample: Bundle.entry[3].resource/*DiagnosticReport/diagnostic-report-008*/.result[0]: Details for urn:uuid:observation-hr matching against profile http://hl7.org/fhir/StructureDefinition/Observation|4.0.1
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[4].fullUrl: UUIDs must be valid and lowercase (patient-008)
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[4].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0' definition allows for the type Device but found type Patient
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[4].resource/*Patient/patient-008*/: The type 'Patient' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceMonitoringSessionExample: Bundle.entry[4].resource/*Patient/patient-008*/.identifier[0].system: No definition could be found for URL value 'https://nimc.gov.ng'
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[5].fullUrl: UUIDs must be valid and lowercase (encounter-008)
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[5].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session|0.1.0' definition allows for the type Device but found type Encounter
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[5].resource/*Encounter/encounter-008*/: The type 'Encounter' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceMonitoringSessionExample: Bundle.entry[5].resource/*Encounter/encounter-008*/.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/DeviceMonitoringSessionExample: Bundle.entry[5].resource/*Encounter/encounter-008*/.subject: URN reference is not locally contained within the bundle urn:uuid:patient-001
+ERROR: Bundle/DeviceMonitoringSessionExample: Bundle.entry[5].resource/*Encounter/encounter-008*/.subject: Unable to resolve resource with reference 'urn:uuid:patient-001'
+WARNING: Bundle/DeviceMonitoringSessionExample: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Bundle-DeviceObservationBundleExample.json ==
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation|0.1.0, Element matches more than one slice - device, observation
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation|0.1.0, Element matches more than one slice - device, observation
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation|0.1.0, Element matches more than one slice - device, observation
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation|0.1.0, Element matches more than one slice - device, deviceMetric
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation|0.1.0, Element matches more than one slice - device, deviceMetric
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation|0.1.0, Element matches more than one slice - device, deviceMetric
+ERROR: Bundle/DeviceObservationBundleExample: Bundle: Bundle.entry:device: max allowed = 1, but found 3 (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation|0.1.0)
+ERROR: Bundle/DeviceObservationBundleExample: Bundle: Slice 'Bundle.entry:observation': a matching slice is required, but not found (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[0].fullUrl: UUIDs must be valid and lowercase (device-003)
+WARNING: Bundle/DeviceObservationBundleExample: Bundle.entry[0].resource/*Device/device-003*/.identifier[0].system: No definition could be found for URL value 'http://manufacturer.com/devices'
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[1].fullUrl: UUIDs must be valid and lowercase (observation-003)
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[1].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation|0.1.0' definition allows for the type Device but found type Observation
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[1].resource/*Observation/observation-003*/: The type 'Observation' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceObservationBundleExample: Bundle.entry[1].resource/*Observation/observation-003*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/DeviceObservationBundleExample: Bundle.entry[1].resource/*Observation/observation-003*/: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[2].fullUrl: UUIDs must be valid and lowercase (metric-003)
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[2].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation|0.1.0' definition allows for the type Device but found type DeviceMetric
+ERROR: Bundle/DeviceObservationBundleExample: Bundle.entry[2].resource/*DeviceMetric/metric-003*/: The type 'DeviceMetric' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceObservationBundleExample: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/DeviceObservationBundleExample: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Bundle-DeviceProvenanceBundleExample.json ==
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, provenance
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, provenance
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, provenance
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, provenance
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, organization
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, organization
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, organization
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, organization
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, patient
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, patient
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, patient
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0, Element matches more than one slice - device, patient
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle: Bundle.entry:device: max allowed = 1, but found 4 (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0)
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle: Slice 'Bundle.entry:provenance': a matching slice is required, but not found (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle: Slice 'Bundle.entry:organization': a matching slice is required, but not found (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[0].fullUrl: UUIDs must be valid and lowercase (device-001)
+WARNING: Bundle/DeviceProvenanceBundleExample: Bundle.entry[0].resource/*Device/device-001*/.identifier[0].system: No definition could be found for URL value 'http://hospital.smartdev.com/devices'
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[1].fullUrl: UUIDs must be valid and lowercase (provenance-005)
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[1].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0' definition allows for the type Device but found type Provenance
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[1].resource/*Provenance/provenance-005*/: The type 'Provenance' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceProvenanceBundleExample: Bundle.entry[1].resource/*Provenance/provenance-005*/.target[0]: URN reference is not locally contained within the bundle urn:uuid:device-005
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[1].resource/*Provenance/provenance-005*/.target[0]: Unable to resolve resource with reference 'urn:uuid:device-005'
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[2].fullUrl: UUIDs must be valid and lowercase (org-005)
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[2].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0' definition allows for the type Device but found type Organization
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[2].resource/*Organization/org-005*/: The type 'Organization' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceProvenanceBundleExample: Bundle.entry[2].resource/*Organization/org-005*/.identifier[0].system: No definition could be found for URL value 'https://herfama.lagos.ng'
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[3].fullUrl: UUIDs must be valid and lowercase (patient-005)
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[3].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance|0.1.0' definition allows for the type Device but found type Patient
+ERROR: Bundle/DeviceProvenanceBundleExample: Bundle.entry[3].resource/*Patient/patient-005*/: The type 'Patient' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceProvenanceBundleExample: Bundle.entry[3].resource/*Patient/patient-005*/.identifier[0].system: No definition could be found for URL value 'https://nimc.gov.ng'
+== fsh-generated/resources/Bundle-DeviceRegistrationBundle001.json ==
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle: Slice 'Bundle.entry:device': a matching slice is required, but not found (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-registration|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle: Slice 'Bundle.entry:deviceDefinition': a matching slice is required, but not found (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-registration|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle: Slice 'Bundle.entry:organization': a matching slice is required, but not found (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-registration|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle: Bundle.entry:identifier: max allowed = 1, but found 3 (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-registration|0.1.0)
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle.entry[0].fullUrl: UUIDs must be valid and lowercase (device-001)
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle.entry[0].resource/*Device/device-006*/.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+WARNING: Bundle/DeviceRegistrationBundle001: Bundle.entry[0].resource/*Device/device-006*/.identifier[0].system: No definition could be found for URL value 'GE'
+INFORMATION: Bundle/DeviceRegistrationBundle001: Bundle.entry[0].resource/*Device/device-006*/.definition: Details for urn:uuid:device-def-001 matching against profile http://hl7.org/fhir/StructureDefinition/DeviceDefinition|4.0.1
+WARNING: Bundle/DeviceRegistrationBundle001: Bundle.entry[0].resource/*Device/device-006*/.type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle.entry[0].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+WARNING: Bundle/DeviceRegistrationBundle001: Bundle.entry[0].resource.identifier[0].system: No definition could be found for URL value 'GE'
+INFORMATION: Bundle/DeviceRegistrationBundle001: Bundle.entry[0].resource.definition: Details for urn:uuid:device-def-001 matching against profile http://hl7.org/fhir/StructureDefinition/DeviceDefinition|4.0.1
+WARNING: Bundle/DeviceRegistrationBundle001: Bundle.entry[0].resource.type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle.entry[1].fullUrl: UUIDs must be valid and lowercase (device-def-001)
+WARNING: Bundle/DeviceRegistrationBundle001: Bundle.entry[1].resource/*DeviceDefinition/device-def-006*/.type.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/device-type' could not be found, so the code cannot be validated
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle.entry[1].resource/*DeviceDefinition/device-def-006*/.type.coding[0].system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/device-type'
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle.entry[2].fullUrl: UUIDs must be valid and lowercase (org-manufacturer)
+WARNING: Bundle/DeviceRegistrationBundle001: Bundle.entry[2].resource/*Organization/org-manufacturer*/.identifier[0].system: No definition could be found for URL value 'https://ndra.gov.ng'
+WARNING: Bundle/DeviceRegistrationBundle001: Bundle.entry[2].resource/*Organization/org-manufacturer*/.type[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/DeviceRegistrationBundle001: Bundle.entry[2].resource.identifier[0].system: No definition could be found for URL value 'https://ndra.gov.ng'
+WARNING: Bundle/DeviceRegistrationBundle001: Bundle.entry[2].resource.type[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle.entry[2].resource.type[0]: None of the codings provided are in the value set 'NG-Imm HealthFacility Type VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-facility-types|0.1.0), and a coding from this value set is required) (codes = null#manufacturer)
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle.entry[2].resource.address[0].district: The System URI could not be determined for the code 'eti-osa' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0'
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle.entry[2].resource.address[0].district: The value provided ('eti-osa') was not found in the value set 'NG-Imm LGAs VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'eti-osa' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0'; The provided code '#eti-osa' was not found in the value set 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0')
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle.entry[2].resource.address[0].state: The System URI could not be determined for the code 'FCT' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0'
+ERROR: Bundle/DeviceRegistrationBundle001: Bundle.entry[2].resource.address[0].state: The value provided ('FCT') was not found in the value set 'NG-Imm States VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'FCT' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0'; The provided code '#FCT' was not found in the value set 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0')
+== fsh-generated/resources/Bundle-DeviceTaskExecutionBundle.json ==
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, task
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, task
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, task
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, task
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[4]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, task
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, organization
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, organization
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, organization
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, organization
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[4]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, organization
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, practitioner
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, practitioner
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, practitioner
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, practitioner
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[4]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, practitioner
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[0]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, serviceRequest
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[1]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, serviceRequest
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[2]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, serviceRequest
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[3]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, serviceRequest
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[4]: Profile https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0, Element matches more than one slice - device, serviceRequest
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle: Bundle.entry:device: max allowed = 1, but found 5 (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0)
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle: Slice 'Bundle.entry:task': a matching slice is required, but not found (from https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[0].fullUrl: UUIDs must be valid and lowercase (device-007)
+WARNING: Bundle/DeviceTaskExecutionBundle: Bundle.entry[0].resource/*Device/device-007*/.identifier[0].system: No definition could be found for URL value 'https://nigeria.gov.ng/devices'
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[1].fullUrl: UUIDs must be valid and lowercase (task-007)
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[1].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0' definition allows for the type Device but found type Task
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[1].resource/*Task/task-007*/: The type 'Task' is not valid - no resources allowed here (allowed = Device)
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[1].resource/*Task/task-007*/.requester: Unable to resolve resource with reference 'Practitioner/practitioner-001'
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[2].fullUrl: UUIDs must be valid and lowercase (org-007)
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[2].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0' definition allows for the type Device but found type Organization
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[2].resource/*Organization/org-007*/: The type 'Organization' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceTaskExecutionBundle: Bundle.entry[2].resource/*Organization/org-007*/.identifier[0].system: No definition could be found for URL value 'https://herfama.lagos.ng'
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[3].fullUrl: UUIDs must be valid and lowercase (practitioner-007)
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[3].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0' definition allows for the type Device but found type Practitioner
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[3].resource/*Practitioner/practitioner-007*/: The type 'Practitioner' is not valid - no resources allowed here (allowed = Device)
+WARNING: Bundle/DeviceTaskExecutionBundle: Bundle.entry[3].resource/*Practitioner/practitioner-007*/.identifier[0].system: No definition could be found for URL value 'https://mdcn.gov.ng'
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[4].fullUrl: UUIDs must be valid and lowercase (service-request-007)
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[4].resource: The Profile 'https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution|0.1.0' definition allows for the type Device but found type ServiceRequest
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[4].resource/*ServiceRequest/service-request-007*/: The type 'ServiceRequest' is not valid - no resources allowed here (allowed = Device)
+ERROR: Bundle/DeviceTaskExecutionBundle: Bundle.entry[4].resource/*ServiceRequest/service-request-007*/.requester: Unable to resolve resource with reference 'Organization/org-001'
+== fsh-generated/resources/CodeSystem-nigeria-facility-type.json ==
+INFORMATION: CodeSystem/nigeria-facility-type: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nigeria-facility-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/nigeria-facility-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-nigeria-gender.json ==
+WARNING: CodeSystem/nigeria-gender: CodeSystem.concept[0].designation[0].use.system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/designation-usage' could not be found, so the code cannot be validated
+ERROR: CodeSystem/nigeria-gender: CodeSystem.concept[0].designation[0].use.system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/designation-usage'
+WARNING: CodeSystem/nigeria-gender: CodeSystem.concept[1].designation[0].use.system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/designation-usage' could not be found, so the code cannot be validated
+ERROR: CodeSystem/nigeria-gender: CodeSystem.concept[1].designation[0].use.system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/designation-usage'
+INFORMATION: CodeSystem/nigeria-gender: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nigeria-gender: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/nigeria-gender: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-nigeria-languages.json ==
+WARNING: CodeSystem/nigeria-languages: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-nigeria-lgas.json ==
+WARNING: CodeSystem/nigeria-lgas: CodeSystem.concept[60].definition: value should not start or finish with whitespace ' okobo LGA'
+WARNING: CodeSystem/nigeria-lgas: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-nigeria-location-owner-cs.json ==
+INFORMATION: CodeSystem/nigeria-location-owner-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/nigeria-location-owner-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/nigeria-location-owner-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-nigeria-states.json ==
+WARNING: CodeSystem/nigeria-states: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-nigeria-wards.json ==
+WARNING: CodeSystem/nigeria-wards: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+== fsh-generated/resources/Communication-example-communication.json ==
+ERROR: Communication/example-communication: Communication.subject: Unable to resolve resource with reference 'Patient/patient-001'
+ERROR: Communication/example-communication: Communication.recipient[0]: Unable to resolve resource with reference 'Practitioner/practitioner-001'
+ERROR: Communication/example-communication: Communication.sender: Unable to resolve resource with reference 'Practitioner/pharmacist-001'
+ERROR: Communication.text.div: Hyperlink 'Patient/patient-001' at 'div/p/a' for 'Patient/patient-001' does not resolve
+ERROR: Communication.text.div: Hyperlink 'Practitioner/practitioner-001' at 'div/p/a' for 'Practitioner/practitioner-001' does not resolve
+ERROR: Communication.text.div: Hyperlink 'Practitioner/pharmacist-001' at 'div/p/a' for 'Practitioner/pharmacist-001' does not resolve
+== fsh-generated/resources/Coverage-coverage-004.json ==
+WARNING: Coverage/coverage-004: Coverage.type.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/coverage-type' could not be found, so the code cannot be validated
+ERROR: Coverage/coverage-004: Coverage.type.coding[0].system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/coverage-type'
+ERROR: Coverage/coverage-004: Coverage.beneficiary: Unable to resolve resource with reference 'urn:uuid:patient-001'
+ERROR: Coverage/coverage-004: Coverage.payor[0]: Unable to resolve resource with reference 'urn:uuid:organization-001'
+== fsh-generated/resources/CoverageEligibilityRequest-eligibility-request-004.json ==
+ERROR: CoverageEligibilityRequest/eligibility-request-004: CoverageEligibilityRequest.purpose[0]: The System URI could not be determined for the code 'test' in the ValueSet 'http://hl7.org/fhir/ValueSet/eligibilityrequest-purpose|4.0.1'
+ERROR: CoverageEligibilityRequest/eligibility-request-004: CoverageEligibilityRequest.purpose[0]: The value provided ('test') was not found in the value set 'EligibilityRequestPurpose' (http://hl7.org/fhir/ValueSet/eligibilityrequest-purpose|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'test' in the ValueSet 'http://hl7.org/fhir/ValueSet/eligibilityrequest-purpose|4.0.1'; The provided code '#test' was not found in the value set 'http://hl7.org/fhir/ValueSet/eligibilityrequest-purpose|4.0.1')
+ERROR: CoverageEligibilityRequest/eligibility-request-004: CoverageEligibilityRequest.patient: Unable to resolve resource with reference 'urn:uuid:patient-001'
+ERROR: CoverageEligibilityRequest/eligibility-request-004: CoverageEligibilityRequest.provider: Unable to resolve resource with reference 'urn:uuid:practitioner-001'
+ERROR: CoverageEligibilityRequest/eligibility-request-004: CoverageEligibilityRequest.insurer: Unable to resolve resource with reference 'urn:uuid:organization-001'
+ERROR: CoverageEligibilityRequest/eligibility-request-004: CoverageEligibilityRequest.insurance[0].coverage: Unable to resolve resource with reference 'urn:uuid:coverage-001'
+== fsh-generated/resources/Device-chemistry-analyzer-device.json ==
+WARNING: Device/chemistry-analyzer-device: Device.identifier[0].system: No definition could be found for URL value 'https://son.gov.ng/device-id'
+ERROR: Device/chemistry-analyzer-device: Device.type.coding[0].display: Wrong Display Name 'Clinical chemistry analyzer' for http://snomed.info/sct#408467006. There are no valid display names found for language(s) 'en-US'. Default display is 'Adult mental illness - specialty (qualifier value)'
+== fsh-generated/resources/Device-device-001.json ==
+WARNING: Device/device-001: Device.identifier[0].system: No definition could be found for URL value 'http://hospital.smartdev.com/devices'
+== fsh-generated/resources/Device-device-003.json ==
+WARNING: Device/device-003: Device.identifier[0].system: No definition could be found for URL value 'http://manufacturer.com/devices'
+== fsh-generated/resources/Device-device-006.json ==
+ERROR: Device/device-006: Device.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+WARNING: Device/device-006: Device.identifier[0].system: No definition could be found for URL value 'GE'
+WARNING: Device/device-006: Device.type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/Device-device-007.json ==
+WARNING: Device/device-007: Device.identifier[0].system: No definition could be found for URL value 'https://nigeria.gov.ng/devices'
+== fsh-generated/resources/Device-device-008.json ==
+WARNING: Device/device-008: Device.identifier[0].system: No definition could be found for URL value 'http://hospital.smartdev.com/devices'
+== fsh-generated/resources/DeviceDefinition-chemistry-analyzer-definition.json ==
+WARNING: DeviceDefinition/chemistry-analyzer-definition: DeviceDefinition.capability[0].description[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/DeviceDefinition-device-def-006.json ==
+WARNING: DeviceDefinition/device-def-006: DeviceDefinition.type.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/device-type' could not be found, so the code cannot be validated
+ERROR: DeviceDefinition/device-def-006: DeviceDefinition.type.coding[0].system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/device-type'
+== fsh-generated/resources/DeviceMetric-deviceMetric-008.json ==
+== fsh-generated/resources/DeviceMetric-devicemetric-004.json ==
+ERROR: DeviceMetric/devicemetric-004: DeviceMetric.type.coding[0].display: Wrong Display Name 'Glucose [Moles/volume] in Serum or Plasma' for http://loinc.org#15074-8. Valid display is one of 4 choices: 'Glucose [Moles/volume] in Blood' (en-US), 'Glucose [Moles/volume] in Blood' (en-US), 'Glucose Bld-sCnc' (en-US) or 'Glucose, Blood' (en-US) (for the language(s) 'en-US')
+ERROR: DeviceMetric/devicemetric-004: DeviceMetric.unit.coding[0].display: Wrong Display Name 'millimole per liter' for http://unitsofmeasure.org#mmol/L. Valid display is 'mmol/L' (for the language(s) 'en-US')
+== fsh-generated/resources/DeviceMetric-metric-003.json ==
+== fsh-generated/resources/DiagnosticReport-ExampleNgDiagnosticReport.json ==
+ERROR: DiagnosticReport/ExampleNgDiagnosticReport: DiagnosticReport.code.coding[0].display: Wrong Display Name 'Basic Metabolic Panel' for http://loinc.org#24323-8. Valid display is one of 4 choices: 'Comprehensive metabolic 2000 panel - Serum or Plasma' (en-US), 'Comprehensive metabolic 2000 panel - Serum or Plasma' (en-US), 'Comp Metab 2000 Pnl SerPl' (en-US) or 'Comprehensive metabolic 2000 panel, Blood' (en-US) (for the language(s) 'en-US')
+ERROR: DiagnosticReport/ExampleNgDiagnosticReport: DiagnosticReport.subject: Unable to resolve resource with reference 'Patient/patient-001'
+ERROR: DiagnosticReport/ExampleNgDiagnosticReport: DiagnosticReport.performer[0]: Unable to resolve resource with reference 'Organization/org-lab'
+ERROR: DiagnosticReport/ExampleNgDiagnosticReport: DiagnosticReport.result[0]: Unable to resolve resource with reference 'Observation/obs-glucose'
+ERROR: DiagnosticReport/ExampleNgDiagnosticReport: DiagnosticReport.result[1]: Unable to resolve resource with reference 'Observation/obs-potassium'
+ERROR: DiagnosticReport.text.div: Hyperlink 'Organization/org-lab' at 'div/table/tr/td/a' for 'Organization/org-lab' does not resolve
+== fsh-generated/resources/DiagnosticReport-diagnostic-report-008.json ==
+ERROR: DiagnosticReport/diagnostic-report-008: DiagnosticReport.subject: Unable to resolve resource with reference 'urn:uuid:patient-001'
+== fsh-generated/resources/DocumentReference-example-document-reference.json ==
+WARNING: DocumentReference/example-document-reference: DocumentReference.category[0].coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/document-classcodes' could not be found, so the code cannot be validated
+ERROR: DocumentReference/example-document-reference: DocumentReference.category[0].coding[0].system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/document-classcodes'
+ERROR: DocumentReference/example-document-reference: DocumentReference.subject: Unable to resolve resource with reference 'Patient/patient-001'
+ERROR: DocumentReference/example-document-reference: DocumentReference.author[0]: Unable to resolve resource with reference 'Practitioner/practitioner-001'
+ERROR: DocumentReference/example-document-reference: DocumentReference.custodian: Unable to resolve resource with reference 'Organization/org-hospital'
+WARNING: DocumentReference/example-document-reference: DocumentReference.content[0].format.system: A definition for CodeSystem 'http://ihe.net/fhir/ihe.formatcode.fhir' could not be found, so the code cannot be validated
+ERROR: DocumentReference/example-document-reference: DocumentReference.context.encounter[0]: Unable to resolve resource with reference 'Encounter/encounter-001'
+ERROR: DocumentReference/example-document-reference: DocumentReference.context.facilityType.coding[0].display: Wrong Display Name 'Hospital facility' for http://terminology.hl7.org/CodeSystem/service-type#322. Valid display is 'District Nursing' (for the language(s) 'en-US')
+ERROR: DocumentReference.text.div: Hyperlink 'Patient/patient-001' at 'div/p/a' for 'Patient/patient-001' does not resolve
+ERROR: DocumentReference.text.div: Hyperlink 'Practitioner/practitioner-001' at 'div/p/a' for 'Practitioner/practitioner-001' does not resolve
+ERROR: DocumentReference.text.div: Hyperlink 'Organization/org-hospital' at 'div/p/a' for 'Organization/org-hospital' does not resolve
+ERROR: DocumentReference.text.div: Hyperlink 'Encounter/encounter-001' at 'div/table/tr/td/a' for 'Encounter/encounter-001' does not resolve
+== fsh-generated/resources/Encounter-encounter-004.json ==
+ERROR: Encounter/encounter-004: Encounter.subject: Unable to resolve resource with reference 'Patient/patient-001'
+ERROR: Encounter/encounter-004: Encounter.serviceProvider: Unable to resolve resource with reference 'Organization/org-hospital'
+ERROR: Encounter.text.div: Hyperlink 'Patient/patient-001' at 'div/p/a' for 'Patient/patient-001' does not resolve
+ERROR: Encounter.text.div: Hyperlink 'Organization/org-hospital' at 'div/p/a' for 'Organization/org-hospital' does not resolve
+== fsh-generated/resources/Encounter-encounter-008.json ==
+WARNING: Encounter/encounter-008: Encounter.class: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Encounter/encounter-008: Encounter.subject: Unable to resolve resource with reference 'urn:uuid:patient-001'
+== fsh-generated/resources/ImplementationGuide-2025connectathonMedicalDevices.json ==
+== fsh-generated/resources/Location-example-location.json ==
+== fsh-generated/resources/Medication-medication-004.json ==
+WARNING: Medication/medication-004: Medication.code.coding[0].system: A definition for CodeSystem 'http://www.nafdac.gov.ng/research/umls/rxnorm' could not be found, so the code cannot be validated
+WARNING: Medication/medication-004: Medication.form.coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/medication-form' could not be found, so the code cannot be validated
+ERROR: Medication/medication-004: Medication.form.coding[0].system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/medication-form'
+== fsh-generated/resources/MedicationDispense-dispense-004.json ==
+ERROR: MedicationDispense/dispense-004: MedicationDispense.medication.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Amoxicillin 250mg Capsule' for http://www.nlm.nih.gov/research/umls/rxnorm#723. Valid display is 'amoxicillin' (for the language(s) 'en-US')
+ERROR: MedicationDispense/dispense-004: MedicationDispense.subject: Unable to resolve resource with reference 'Patient/patient-001'
+ERROR: MedicationDispense/dispense-004: MedicationDispense.context: Unable to resolve resource with reference 'Encounter/example-encounter'
+ERROR: MedicationDispense/dispense-004: MedicationDispense.performer[0].actor: Unable to resolve resource with reference 'Practitioner/pharmacist-001'
+ERROR: MedicationDispense.text.div: Hyperlink 'Patient/patient-001' at 'div/p/a' for 'Patient/patient-001' does not resolve
+ERROR: MedicationDispense.text.div: Hyperlink 'Encounter/example-encounter' at 'div/p/a' for 'Encounter/example-encounter' does not resolve
+ERROR: MedicationDispense.text.div: Hyperlink 'Practitioner/pharmacist-001' at 'div/table/tr/td/a' for 'Practitioner/pharmacist-001' does not resolve
+== fsh-generated/resources/MedicationRequest-medicationrequest-004.json ==
+ERROR: MedicationRequest/medicationrequest-004: MedicationRequest.medication.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Amoxicillin 250mg Capsule' for http://www.nlm.nih.gov/research/umls/rxnorm#723. Valid display is 'amoxicillin' (for the language(s) 'en-US')
+ERROR: MedicationRequest/medicationrequest-004: MedicationRequest.subject: Unable to resolve resource with reference 'NgPatient/patient-001'
+ERROR: MedicationRequest/medicationrequest-004: MedicationRequest.encounter: Unable to resolve resource with reference 'NgEncounter/encounter-001'
+ERROR: MedicationRequest/medicationrequest-004: MedicationRequest.requester: Unable to resolve resource with reference 'NgPractitioner/practitioner-001'
+ERROR: MedicationRequest/medicationrequest-004: MedicationRequest.recorder: Unable to resolve resource with reference 'NgPractitioner/practitioner-001'
+== fsh-generated/resources/Observation-lab-observation-004.json ==
+ERROR: Observation/lab-observation-004: Observation.subject: Unable to resolve resource with reference 'Patient/patient-001'
+ERROR: Observation/lab-observation-004: Observation.performer[0]: Unable to resolve resource with reference 'Practitioner/practitioner-001'
+ERROR: Observation.text.div: Hyperlink 'Patient/patient-001' at 'div/p/a' for 'Patient/patient-001' does not resolve
+ERROR: Observation.text.div: Hyperlink 'Practitioner/practitioner-001' at 'div/p/a' for 'Practitioner/practitioner-001' does not resolve
+== fsh-generated/resources/Observation-observation-003.json ==
+WARNING: Observation/observation-003: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/observation-003: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-observation-hr.json ==
+ERROR: Observation/observation-hr: Observation.subject: Unable to resolve resource with reference 'urn:uuid:patient-001'
+WARNING: Observation/observation-hr: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Organization-org-005.json ==
+WARNING: Organization/org-005: Organization.identifier[0].system: No definition could be found for URL value 'https://herfama.lagos.ng'
+== fsh-generated/resources/Organization-org-007.json ==
+WARNING: Organization/org-007: Organization.identifier[0].system: No definition could be found for URL value 'https://herfama.lagos.ng'
+== fsh-generated/resources/Organization-org-manufacturer.json ==
+WARNING: Organization/org-manufacturer: Organization.identifier[0].system: No definition could be found for URL value 'https://ndra.gov.ng'
+WARNING: Organization/org-manufacturer: Organization.type[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Organization/org-manufacturer: Organization.type[0]: None of the codings provided are in the value set 'NG-Imm HealthFacility Type VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-facility-types|0.1.0), and a coding from this value set is required) (codes = null#manufacturer)
+ERROR: Organization/org-manufacturer: Organization.address[0].district: The System URI could not be determined for the code 'eti-osa' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0'
+ERROR: Organization/org-manufacturer: Organization.address[0].district: The value provided ('eti-osa') was not found in the value set 'NG-Imm LGAs VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'eti-osa' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0'; The provided code '#eti-osa' was not found in the value set 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0')
+ERROR: Organization/org-manufacturer: Organization.address[0].state: The System URI could not be determined for the code 'FCT' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0'
+ERROR: Organization/org-manufacturer: Organization.address[0].state: The value provided ('FCT') was not found in the value set 'NG-Imm States VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'FCT' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0'; The provided code '#FCT' was not found in the value set 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0')
+== fsh-generated/resources/Organization-organization-004.json ==
+WARNING: Organization/organization-004: Organization.identifier[0].system: No definition could be found for URL value 'https://herfama.lagos.ng'
+ERROR: Organization/organization-004: Organization.type[0]: None of the codings provided are in the value set 'NG-Imm HealthFacility Type VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-facility-types|0.1.0), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/organization-type#prov)
+ERROR: Organization/organization-004: Organization.address[0].district: The System URI could not be determined for the code 'ikeja' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0'
+ERROR: Organization/organization-004: Organization.address[0].district: The value provided ('ikeja') was not found in the value set 'NG-Imm LGAs VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'ikeja' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0'; The provided code '#ikeja' was not found in the value set 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0')
+ERROR: Organization/organization-004: Organization.address[0].state: The System URI could not be determined for the code 'Lagos' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0'
+ERROR: Organization/organization-004: Organization.address[0].state: The value provided ('Lagos') was not found in the value set 'NG-Imm States VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'Lagos' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0'; The provided code '#Lagos' was not found in the value set 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0')
+== fsh-generated/resources/Patient-patient-004.json ==
+WARNING: Patient/patient-004: Patient.identifier[0].system: No definition could be found for URL value 'https://nimc.gov.ng'
+ERROR: Patient/patient-004: Patient.address[0].district: The System URI could not be determined for the code 'nsukka' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0'
+ERROR: Patient/patient-004: Patient.address[0].district: The value provided ('nsukka') was not found in the value set 'NG-Imm LGAs VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'nsukka' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0'; The provided code '#nsukka' was not found in the value set 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0')
+ERROR: Patient/patient-004: Patient.address[0].state: The System URI could not be determined for the code 'Enugu' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0'
+ERROR: Patient/patient-004: Patient.address[0].state: The value provided ('Enugu') was not found in the value set 'NG-Imm States VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'Enugu' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0'; The provided code '#Enugu' was not found in the value set 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0')
+ERROR: Patient/patient-004: Patient.contact[0].address.district: The System URI could not be determined for the code 'nsukka' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0'
+ERROR: Patient/patient-004: Patient.contact[0].address.district: The value provided ('nsukka') was not found in the value set 'NG-Imm LGAs VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'nsukka' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0'; The provided code '#nsukka' was not found in the value set 'https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas|0.1.0')
+ERROR: Patient/patient-004: Patient.contact[0].address.state: The System URI could not be determined for the code 'Enugu' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0'
+ERROR: Patient/patient-004: Patient.contact[0].address.state: The value provided ('Enugu') was not found in the value set 'NG-Imm States VS' (https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'Enugu' in the ValueSet 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0'; The provided code '#Enugu' was not found in the value set 'https://dhin.org/2025Connectathon/ValueSet/nigeria-states|0.1.0')
+== fsh-generated/resources/Patient-patient-005.json ==
+WARNING: Patient/patient-005: Patient.identifier[0].system: No definition could be found for URL value 'https://nimc.gov.ng'
+== fsh-generated/resources/Patient-patient-008.json ==
+WARNING: Patient/patient-008: Patient.identifier[0].system: No definition could be found for URL value 'https://nimc.gov.ng'
+== fsh-generated/resources/Practitioner-practitioner-004.json ==
+WARNING: Practitioner/practitioner-004: Practitioner.identifier[0].system: No definition could be found for URL value 'https://mdcn.gov.ng'
+ERROR: Practitioner/practitioner-004: Practitioner.qualification[0].issuer: Unable to resolve resource with reference 'Organization/organization-001'
+ERROR: Practitioner.text.div: Hyperlink 'Organization/organization-001' at 'div/table/tr/td/a' for 'Organization/organization-001' does not resolve
+== fsh-generated/resources/Practitioner-practitioner-007.json ==
+WARNING: Practitioner/practitioner-007: Practitioner.identifier[0].system: No definition could be found for URL value 'https://mdcn.gov.ng'
+== fsh-generated/resources/PractitionerRole-practitioner-role-004.json ==
+ERROR: PractitionerRole/practitioner-role-004: PractitionerRole.practitioner: Unable to resolve resource with reference 'Practitioner/practitioner-001'
+ERROR: PractitionerRole/practitioner-role-004: PractitionerRole.organization: Unable to resolve resource with reference 'Organization/organization-001'
+WARNING: PractitionerRole/practitioner-role-004: PractitionerRole.specialty[0].coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/c80-practice-codes' could not be found, so the code cannot be validated
+ERROR: PractitionerRole/practitioner-role-004: PractitionerRole.specialty[0].coding[0].system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/c80-practice-codes'
+ERROR: PractitionerRole.text.div: Hyperlink 'Practitioner/practitioner-001' at 'div/p/a' for 'Practitioner/practitioner-001' does not resolve
+ERROR: PractitionerRole.text.div: Hyperlink 'Organization/organization-001' at 'div/p/a' for 'Organization/organization-001' does not resolve
+== fsh-generated/resources/Provenance-provenance-004.json ==
+ERROR: Provenance/provenance-004: Provenance.target[0]: Unable to resolve resource with reference 'MedicationRequest/example-medication-request'
+ERROR: Provenance/provenance-004: Provenance.agent[0].who: Unable to resolve resource with reference 'Practitioner/practitioner-001'
+ERROR: Provenance/provenance-004: Provenance.agent[0].onBehalfOf: Unable to resolve resource with reference 'Organization/org-hospital'
+ERROR: Provenance.text.div: Hyperlink 'MedicationRequest/example-medication-request' at 'div/p/a' for 'MedicationRequest/example-medication-request' does not resolve
+ERROR: Provenance.text.div: Hyperlink 'Practitioner/practitioner-001' at 'div/table/tr/td/a' for 'Practitioner/practitioner-001' does not resolve
+ERROR: Provenance.text.div: Hyperlink 'Organization/org-hospital' at 'div/table/tr/td/a' for 'Organization/org-hospital' does not resolve
+== fsh-generated/resources/Provenance-provenance-005.json ==
+ERROR: Provenance/provenance-005: Provenance.target[0]: Unable to resolve resource with reference 'urn:uuid:device-005'
+== fsh-generated/resources/ServiceRequest-service-request-007.json ==
+ERROR: ServiceRequest/service-request-007: ServiceRequest.requester: Unable to resolve resource with reference 'Organization/org-001'
+ERROR: ServiceRequest.text.div: Hyperlink 'Organization/org-001' at 'div/p/a' for 'Organization/org-001' does not resolve
+== fsh-generated/resources/StructureDefinition-NgPatient.json ==
+ERROR: NG Patient.Patient.gender: Binding https://dhin.org/2025Connectathon/ValueSet/nigeria-gender is not a subset of binding http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1 because The codes 'female,male' are not in the base valueset
+INFORMATION: StructureDefinition/NgPatient: StructureDefinition.snapshot.element[12].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot is deprecated with the note Use additionalBinding extension or element instead
+== fsh-generated/resources/StructureDefinition-NgPractitioner.json ==
+== fsh-generated/resources/StructureDefinition-ng-audit-event.json ==
+WARNING: StructureDefinition/ng-audit-event: StructureDefinition.snapshot.element[51].binding.valueSet: There are multiple different potential matches for the url 'http://hl7.org/fhir/ValueSet/object-lifecycle-events'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.3.0-ballot', found versions: 4.0.1, 5.3.0-ballot. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/ValueSet/object-lifecycle-events' to 'http://hl7.org/fhir/ValueSet/object-lifecycle-events|5.3.0-ballot'
+== fsh-generated/resources/StructureDefinition-ng-bundle-device-audit.json ==
+WARNING: StructureDefinition/ng-bundle-device-audit: StructureDefinition.snapshot: The slice 'auditEvent' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-audit: StructureDefinition.snapshot: The slice 'device' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-audit: StructureDefinition.snapshot: The slice 'organization' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-ng-bundle-device-monitoring-session.json ==
+WARNING: StructureDefinition/ng-bundle-device-monitoring-session: StructureDefinition.snapshot: The slice 'device' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-monitoring-session: StructureDefinition.snapshot: The slice 'deviceMetric' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-monitoring-session: StructureDefinition.snapshot: The slice 'observation' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-monitoring-session: StructureDefinition.snapshot: The slice 'diagnosticReport' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-monitoring-session: StructureDefinition.snapshot: The slice 'patient' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-monitoring-session: StructureDefinition.snapshot: The slice 'encounter' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-ng-bundle-device-observation.json ==
+WARNING: StructureDefinition/ng-bundle-device-observation: StructureDefinition.snapshot: The slice 'device' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-observation: StructureDefinition.snapshot: The slice 'observation' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-observation: StructureDefinition.snapshot: The slice 'deviceMetric' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-ng-bundle-device-provenance.json ==
+WARNING: StructureDefinition/ng-bundle-device-provenance: StructureDefinition.snapshot: The slice 'device' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-provenance: StructureDefinition.snapshot: The slice 'provenance' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-provenance: StructureDefinition.snapshot: The slice 'organization' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-provenance: StructureDefinition.snapshot: The slice 'patient' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-ng-bundle-device-registration.json ==
+WARNING: StructureDefinition/ng-bundle-device-registration: StructureDefinition.snapshot: The slice 'device' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-registration: StructureDefinition.snapshot: The slice 'deviceDefinition' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-registration: StructureDefinition.snapshot: The slice 'organization' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-registration: StructureDefinition.snapshot: The slice 'identifier' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-ng-bundle-device-task-execution.json ==
+WARNING: StructureDefinition/ng-bundle-device-task-execution: StructureDefinition.snapshot: The slice 'device' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-task-execution: StructureDefinition.snapshot: The slice 'task' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-task-execution: StructureDefinition.snapshot: The slice 'organization' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-task-execution: StructureDefinition.snapshot: The slice 'practitioner' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/ng-bundle-device-task-execution: StructureDefinition.snapshot: The slice 'serviceRequest' on path 'Bundle.entry' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated/resources/StructureDefinition-ng-claim-coverage.json ==
+== fsh-generated/resources/StructureDefinition-ng-claim-task.json ==
+== fsh-generated/resources/StructureDefinition-ng-communication.json ==
+== fsh-generated/resources/StructureDefinition-ng-device.json ==
+== fsh-generated/resources/StructureDefinition-ng-device-definition.json ==
+== fsh-generated/resources/StructureDefinition-ng-device-metric.json ==
+== fsh-generated/resources/StructureDefinition-ng-diagnostic-report.json ==
+== fsh-generated/resources/StructureDefinition-ng-document-reference.json ==
+== fsh-generated/resources/StructureDefinition-ng-eligibility-request.json ==
+== fsh-generated/resources/StructureDefinition-ng-imm-organization.json ==
+== fsh-generated/resources/StructureDefinition-ng-location.json ==
+== fsh-generated/resources/StructureDefinition-ng-medication.json ==
+== fsh-generated/resources/StructureDefinition-ng-medication-dispense.json ==
+INFORMATION: StructureDefinition/ng-medication-dispense: StructureDefinition.snapshot.element[28].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-ng-medication-request.json ==
+== fsh-generated/resources/StructureDefinition-ng-observation-labresult.json ==
+== fsh-generated/resources/StructureDefinition-ng-practitionerrole.json ==
+== fsh-generated/resources/StructureDefinition-ng-prescription-encounter.json ==
+== fsh-generated/resources/StructureDefinition-ng-provenance.json ==
+== fsh-generated/resources/Task-example-claim-task.json ==
+ERROR: Task/example-claim-task: Task.for: Unable to resolve resource with reference 'MedicationRequest/example-medication-request'
+ERROR: Task/example-claim-task: Task.requester: Unable to resolve resource with reference 'Organization/org-hospital'
+ERROR: Task/example-claim-task: Task.owner: Unable to resolve resource with reference 'Practitioner/pharmacist-001'
+ERROR: Task.text.div: Hyperlink 'MedicationRequest/example-medication-request' at 'div/p/a' for 'MedicationRequest/example-medication-request' does not resolve
+ERROR: Task.text.div: Hyperlink 'Organization/org-hospital' at 'div/p/a' for 'Organization/org-hospital' does not resolve
+ERROR: Task.text.div: Hyperlink 'Practitioner/pharmacist-001' at 'div/p/a' for 'Practitioner/pharmacist-001' does not resolve
+== fsh-generated/resources/Task-task-007.json ==
+ERROR: Task/task-007: Task.requester: Unable to resolve resource with reference 'Practitioner/practitioner-001'
+ERROR: Task.text.div: Hyperlink 'Practitioner/practitioner-001' at 'div/p/a' for 'Practitioner/practitioner-001' does not resolve
+== fsh-generated/resources/ValueSet-nigeria-facility-types.json ==
+WARNING: ValueSet/nigeria-facility-types: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-nigeria-gender.json ==
+WARNING: ValueSet/nigeria-gender: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-nigeria-languages.json ==
+WARNING: ValueSet/nigeria-languages: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-nigeria-lgas.json ==
+WARNING: ValueSet/nigeria-lgas: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-nigeria-location-owner.json ==
+WARNING: ValueSet/nigeria-location-owner: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-nigeria-states.json ==
+WARNING: ValueSet/nigeria-states: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-nigeria-wards.json ==
+WARNING: ValueSet/nigeria-wards: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

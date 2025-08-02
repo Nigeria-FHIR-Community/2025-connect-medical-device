@@ -1,0 +1,161 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Bundle/DeviceMonitoringSessionExample> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DeviceMonitoringSessionExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2025-07-30T10:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:device-003"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:device-003> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:deviceMetric-003"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:deviceMetric-003> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:observation-hr"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:observation-hr> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:diagnostic-report-003"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:diagnostic-report-003> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:patient-008"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:patient-008> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:encounter-008"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:encounter-008> )
+  ] ) . # 
+
+<urn:uuid:device-003> a fhir:Device ;
+  fhir:id [ fhir:v "device-008"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_device-008\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device device-008</b></p><a name=\"device-008\"> </a><a name=\"hcdevice-008\"> </a><p><b>identifier</b>: <code>http://hospital.smartdev.com/devices</code>/CHEM-ANA-0099</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: SmartDev</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Chemistry Analyser 9000</td><td>Manufacturer name</td></tr></table><p><b>type</b>: <span title=\"Codes:\">Chemistry Analyser</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital.smartdev.com/devices"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "CHEM-ANA-0099" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "SmartDev"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Chemistry Analyser 9000" ] ;
+     fhir:type [ fhir:v "manufacturer-name" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Chemistry Analyser" ]
+  ] . # 
+
+<urn:uuid:deviceMetric-003> a fhir:DeviceMetric ;
+  fhir:id [ fhir:v "deviceMetric-008"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DeviceMetric_deviceMetric-008\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric deviceMetric-008</b></p><a name=\"deviceMetric-008\"> </a><a name=\"hcdeviceMetric-008\"> </a><p><b>type</b>: <span title=\"Codes:\">Heart Rate</span></p><p><b>unit</b>: <span title=\"Codes:\">beats/min</span></p><p><b>parent</b>: <a href=\"Bundle-DeviceAuditExample.html#urn-uuid-device-001\">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></p><p><b>operationalStatus</b>: On</p><p><b>category</b>: Measurement</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Heart Rate" ]
+  ] ; # 
+  fhir:unit [
+     fhir:text [ fhir:v "beats/min" ]
+  ] ; # 
+  fhir:parent [
+     fhir:reference [ fhir:v "urn:uuid:device-001" ]
+  ] ; # 
+  fhir:operationalStatus [ fhir:v "on"] ; # 
+  fhir:category [ fhir:v "measurement"] . # 
+
+<urn:uuid:observation-hr> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-hr"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-hr\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-hr</b></p><a name=\"observation-hr\"> </a><a name=\"hcobservation-hr\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">Heart Rate</span></p><p><b>subject</b>: <code>urn:uuid:patient-001</code></p><p><b>effective</b>: 2025-07-30 09:58:00+0100</p><p><b>value</b>: 84 beats/min</p><p><b>device</b>: <a href=\"Bundle-DeviceAuditExample.html#urn-uuid-device-001\">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Heart Rate" ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:patient-001" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-07-30T09:58:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "84"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "beats/min" ]
+  ] ; # 
+  fhir:device [
+     fhir:reference [ fhir:v "urn:uuid:device-001" ]
+  ] . # 
+
+<urn:uuid:diagnostic-report-003> a fhir:DiagnosticReport ;
+  fhir:id [ fhir:v "diagnostic-report-008"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_diagnostic-report-008\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport diagnostic-report-008</b></p><a name=\"diagnostic-report-008\"> </a><a name=\"hcdiagnostic-report-008\"> </a><h2><span title=\"Codes:\">Vital Signs Summary</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2025-07-30 10:00:00+0100</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td/><td/></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Vital Signs Summary" ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:patient-001" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-07-30T10:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:result ( [
+     fhir:reference [ fhir:v "urn:uuid:observation-hr" ]
+  ] ) . # 
+
+<urn:uuid:patient-008> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-008"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-008\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-008</b></p><a name=\"patient-008\"> </a><a name=\"hcpatient-008\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Grace Ibrahim  Female, DoB: 1990-06-15 ( https://nimc.gov.ng#NIN98989898)</p><hr/></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nimc.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "NIN98989898" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Ibrahim" ] ;
+     fhir:given ( [ fhir:v "Grace" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1990-06-15"^^xsd:date] . # 
+
+<urn:uuid:encounter-008> a fhir:Encounter ;
+  fhir:id [ fhir:v "encounter-008"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_encounter-008\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-008</b></p><a name=\"encounter-008\"> </a><a name=\"hcencounter-008\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: [not stated] AMB: AMB</p><p><b>subject</b>: <code>urn:uuid:patient-001</code></p><p><b>period</b>: 2025-07-30 09:45:00+0100 --&gt; 2025-07-30 10:05:00+0100</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:code [ fhir:v "AMB" ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:patient-001" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-07-30T09:45:00+01:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-07-30T10:05:00+01:00"^^xsd:dateTime ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

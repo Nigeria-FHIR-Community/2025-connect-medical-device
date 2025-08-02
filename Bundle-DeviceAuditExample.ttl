@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Bundle/DeviceAuditExample> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DeviceAuditExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2025-07-30T10:10:00+01:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:audit-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:audit-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:device-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:device-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:org-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:org-001> )
+  ] ) . # 
+
+<urn:uuid:audit-001> a fhir:AuditEvent ;
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AuditEvent_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AuditEvent </b></p><p><b>type</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-audit-event-type.html#audit-event-type-rest\">Audit Event ID rest</a>: RESTful Operation</p><p><b>subtype</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-restful-interaction.html#restful-interaction-read\">FHIR Restful Interactions read</a>: read</p><p><b>recorded</b>: 2025-07-30 10:09:50+0100</p><h3>Agents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Who</b></td><td><b>Requestor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-DeviceAuditExample.html#urn-uuid-device-001\">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></td><td>false</td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Site</b></td><td><b>Observer</b></td></tr><tr><td style=\"display: none\">*</td><td>Laboratory Information System</td><td><a href=\"Bundle-DeviceAuditExample.html#urn-uuid-org-001\">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:type [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/audit-event-type"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "rest" ]
+  ] ; # 
+  fhir:subtype ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/restful-interaction"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "read" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2025-07-30T10:09:50+01:00"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:who [
+       fhir:reference [ fhir:v "urn:uuid:device-001" ]
+     ] ;
+     fhir:requestor [ fhir:v false ]
+  ] ) ; # 
+  fhir:source [
+     fhir:site [ fhir:v "Laboratory Information System" ] ;
+     fhir:observer [
+       fhir:reference [ fhir:v "urn:uuid:org-001" ]
+     ]
+  ] . # 
+
+<urn:uuid:device-001> a fhir:Device ;
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device </b></p><h3>UdiCarriers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DeviceIdentifier</b></td></tr><tr><td style=\"display: none\">*</td><td>CHEM12345678</td></tr></table><p><b>status</b>: Active</p><p><b>manufacturer</b>: BioAnalyzer Ltd</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>BioAnalyzer 2000</td><td>minjirya</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:udiCarrier ( [
+     fhir:deviceIdentifier [ fhir:v "CHEM12345678" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "BioAnalyzer Ltd"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "BioAnalyzer 2000" ] ;
+     fhir:type [ fhir:v "minjirya" ]
+  ] ) . # 
+
+<urn:uuid:org-001> a fhir:Organization ;
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization </b></p><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF0001</p><p><b>name</b>: State Diagnostic Center</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://herfama.lagos.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HF0001" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "State Diagnostic Center"] . # 
+
+# -------------------------------------------------------------------------------------
+

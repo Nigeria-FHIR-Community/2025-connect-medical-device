@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "practitioner-007",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-007</b></p><a name=\"practitioner-007\"> </a><a name=\"hcpractitioner-007\"> </a><p><b>identifier</b>: <code>https://mdcn.gov.ng</code>/MDCN001234</p><p><b>name</b>: Ifeoma Okoye </p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://mdcn.gov.ng",
+    "value" : "MDCN001234"
+  }],
+  "name" : [{
+    "family" : "Okoye",
+    "given" : ["Ifeoma"]
+  }]
+}

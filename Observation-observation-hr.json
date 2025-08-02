@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-hr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-hr</b></p><a name=\"observation-hr\"> </a><a name=\"hcobservation-hr\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">Heart Rate</span></p><p><b>subject</b>: <code>urn:uuid:patient-001</code></p><p><b>effective</b>: 2025-07-30 09:58:00+0100</p><p><b>value</b>: 84 beats/min</p><p><b>device</b>: <a href=\"Bundle-DeviceAuditExample.html#urn-uuid-device-001\">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "text" : "Heart Rate"
+  },
+  "subject" : {
+    "reference" : "urn:uuid:patient-001"
+  },
+  "effectiveDateTime" : "2025-07-30T09:58:00+01:00",
+  "valueQuantity" : {
+    "value" : 84,
+    "unit" : "beats/min"
+  },
+  "device" : {
+    "reference" : "urn:uuid:device-001"
+  }
+}

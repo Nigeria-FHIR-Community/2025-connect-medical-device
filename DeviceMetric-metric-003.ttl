@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/DeviceMetric/metric-003> a fhir:DeviceMetric ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "metric-003"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric metric-003</b></p><a name=\"metric-003\"> </a><a name=\"hcmetric-003\"> </a><p><b>type</b>: <span title=\"Codes:\">Glucose</span></p><p><b>unit</b>: <span title=\"Codes:\">mmol/L</span></p><p><b>category</b>: Measurement</p><p><b>measurementPeriod</b>: Once per 5 minutes</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Glucose" ]
+  ] ; # 
+  fhir:unit [
+     fhir:text [ fhir:v "mmol/L" ]
+  ] ; # 
+  fhir:category [ fhir:v "measurement"] ; # 
+  fhir:measurementPeriod [
+     fhir:repeat [
+       fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+       fhir:period [ fhir:v "5"^^xsd:decimal ] ;
+       fhir:periodUnit [ fhir:v "min" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

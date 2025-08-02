@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="DeviceTaskExecutionBundle"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-task-execution"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2025-07-30T12:00:00+01:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:device-007"/>
+    <resource>
+      <Device>
+        <id value="device-007"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Device_device-007"> </a><p class="res-header-id"><b>Generated Narrative: Device device-007</b></p><a name="device-007"> </a><a name="hcdevice-007"> </a><p><b>identifier</b>: <code>https://nigeria.gov.ng/devices</code>/CHEM-ANALYZER-007</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Global Diagnostics Ltd</p><p><b>modelNumber</b>: ChemX-2000</p><p><b>type</b>: <span title="Codes:">Automated Chemistry Analyzer</span></p></div>
+        </text>
+        <identifier>
+          <system value="https://nigeria.gov.ng/devices"/>
+          <value value="CHEM-ANALYZER-007"/>
+        </identifier>
+        <status value="active"/>
+        <manufacturer value="Global Diagnostics Ltd"/>
+        <modelNumber value="ChemX-2000"/>
+        <type>
+          <text value="Automated Chemistry Analyzer"/>
+        </type>
+      </Device>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:task-007"/>
+    <resource>
+      <Task>
+        <id value="task-007"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_task-007"> </a><p class="res-header-id"><b>Generated Narrative: Task task-007</b></p><a name="task-007"> </a><a name="hctask-007"> </a><p><b>status</b>: In Progress</p><p><b>intent</b>: order</p><p><b>code</b>: <span title="Codes:">Device Calibration</span></p><p><b>for</b>: <a href="Device-device-007.html">Device: identifier = https://nigeria.gov.ng/devices#CHEM-ANALYZER-007; status = active; manufacturer = Global Diagnostics Ltd; modelNumber = ChemX-2000; type = </a></p><p><b>executionPeriod</b>: 2025-07-30 11:00:00+0100 --&gt; (ongoing)</p><p><b>requester</b>: <a href="Practitioner/practitioner-001">Practitioner/practitioner-001</a></p></div>
+        </text>
+        <status value="in-progress"/>
+        <intent value="order"/>
+        <code>
+          <text value="Device Calibration"/>
+        </code>
+        <for>
+          <reference value="Device/device-007"/>
+        </for>
+        <executionPeriod>
+          <start value="2025-07-30T11:00:00+01:00"/>
+        </executionPeriod>
+        <requester>
+          <reference value="Practitioner/practitioner-001"/>
+        </requester>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:org-007"/>
+    <resource>
+      <Organization>
+        <id value="org-007"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_org-007"> </a><p class="res-header-id"><b>Generated Narrative: Organization org-007</b></p><a name="org-007"> </a><a name="hcorg-007"> </a><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF001</p><p><b>name</b>: Diagnostic Research Center</p></div>
+        </text>
+        <identifier>
+          <system value="https://herfama.lagos.ng"/>
+          <value value="HF001"/>
+        </identifier>
+        <name value="Diagnostic Research Center"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:practitioner-007"/>
+    <resource>
+      <Practitioner>
+        <id value="practitioner-007"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_practitioner-007"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner practitioner-007</b></p><a name="practitioner-007"> </a><a name="hcpractitioner-007"> </a><p><b>identifier</b>: <code>https://mdcn.gov.ng</code>/MDCN001234</p><p><b>name</b>: Ifeoma Okoye </p></div>
+        </text>
+        <identifier>
+          <system value="https://mdcn.gov.ng"/>
+          <value value="MDCN001234"/>
+        </identifier>
+        <name>
+          <family value="Okoye"/>
+          <given value="Ifeoma"/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:service-request-007"/>
+    <resource>
+      <ServiceRequest>
+        <id value="service-request-007"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_service-request-007"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest service-request-007</b></p><a name="service-request-007"> </a><a name="hcservice-request-007"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title="Codes:">Calibration Procedure Request</span></p><p><b>subject</b>: <a href="Device-device-001.html">Device: identifier = http://hospital.smartdev.com/devices#CHEM-ANA-0099; status = active; manufacturer = SmartDev; type = </a></p><p><b>authoredOn</b>: 2025-07-30</p><p><b>requester</b>: <a href="Organization/org-001">Organization/org-001</a></p></div>
+        </text>
+        <status value="active"/>
+        <intent value="order"/>
+        <code>
+          <text value="Calibration Procedure Request"/>
+        </code>
+        <subject>
+          <reference value="Device/device-001"/>
+        </subject>
+        <authoredOn value="2025-07-30"/>
+        <requester>
+          <reference value="Organization/org-001"/>
+        </requester>
+      </ServiceRequest>
+    </resource>
+  </entry>
+</Bundle>

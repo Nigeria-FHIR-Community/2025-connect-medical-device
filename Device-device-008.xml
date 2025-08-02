@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="device-008"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device device-008</b></p><a name="device-008"> </a><a name="hcdevice-008"> </a><p><b>identifier</b>: <code>http://hospital.smartdev.com/devices</code>/CHEM-ANA-0099</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: SmartDev</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Chemistry Analyser 9000</td><td>Manufacturer name</td></tr></table><p><b>type</b>: <span title="Codes:">Chemistry Analyser</span></p></div>
+  </text>
+  <identifier>
+    <system value="http://hospital.smartdev.com/devices"/>
+    <value value="CHEM-ANA-0099"/>
+  </identifier>
+  <status value="active"/>
+  <manufacturer value="SmartDev"/>
+  <deviceName>
+    <name value="Chemistry Analyser 9000"/>
+    <type value="manufacturer-name"/>
+  </deviceName>
+  <type>
+    <text value="Chemistry Analyser"/>
+  </type>
+</Device>

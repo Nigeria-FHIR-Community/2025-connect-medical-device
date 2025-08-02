@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Communication xmlns="http://hl7.org/fhir">
+  <id value="example-communication"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-communication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Communication example-communication</b></p><a name="example-communication"> </a><a name="hcexample-communication"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-communication.html">NG Communication</a></p></div><p><b>status</b>: Completed</p><p><b>medium</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationMode WRITTEN}">written</span></p><p><b>subject</b>: <a href="Patient/patient-001">Patient/patient-001</a></p><p><b>sent</b>: 2025-08-05 11:00:00+0100</p><p><b>received</b>: 2025-08-05 11:03:00+0100</p><p><b>recipient</b>: <a href="Practitioner/practitioner-001">Practitioner/practitioner-001</a></p><p><b>sender</b>: <a href="Practitioner/pharmacist-001">Practitioner/pharmacist-001</a></p><h3>Payloads</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Content[x]</b></td></tr><tr><td style="display: none">*</td><td>Kindly confirm dosage frequency for Amoxicillin prescription before dispensing.</td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <medium>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"/>
+      <code value="WRITTEN"/>
+      <display value="written"/>
+    </coding>
+  </medium>
+  <subject>
+    <reference value="Patient/patient-001"/>
+  </subject>
+  <sent value="2025-08-05T11:00:00+01:00"/>
+  <received value="2025-08-05T11:03:00+01:00"/>
+  <recipient>
+    <reference value="Practitioner/practitioner-001"/>
+  </recipient>
+  <sender>
+    <reference value="Practitioner/pharmacist-001"/>
+  </sender>
+  <payload>
+    <contentString value="Kindly confirm dosage frequency for Amoxicillin prescription before dispensing."/>
+  </payload>
+</Communication>

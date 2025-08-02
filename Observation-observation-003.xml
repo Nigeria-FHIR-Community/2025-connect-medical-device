@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-003"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-003</b></p><a name="observation-003"> </a><a name="hcobservation-003"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:">Glucose Level</span></p><p><b>effective</b>: 2025-07-30 07:50:00+0100</p><p><b>value</b>: 6.2 mmol/L</p><p><b>device</b>: <a href="Bundle-DeviceMonitoringSessionExample.html#urn-uuid-device-003">Bundle: type = collection; timestamp = 2025-07-30 10:00:00+0100</a></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <text value="Glucose Level"/>
+  </code>
+  <effectiveDateTime value="2025-07-30T07:50:00+01:00"/>
+  <valueQuantity>
+    <value value="6.2"/>
+    <unit value="mmol/L"/>
+  </valueQuantity>
+  <device>
+    <reference value="urn:uuid:device-003"/>
+  </device>
+</Observation>

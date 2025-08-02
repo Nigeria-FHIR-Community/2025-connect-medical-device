@@ -1,0 +1,19 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "diagnostic-report-008",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport diagnostic-report-008</b></p><a name=\"diagnostic-report-008\"> </a><a name=\"hcdiagnostic-report-008\"> </a><h2><span title=\"Codes:\">Vital Signs Summary</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2025-07-30 10:00:00+0100</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td/><td/></tr></table></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "text" : "Vital Signs Summary"
+  },
+  "subject" : {
+    "reference" : "urn:uuid:patient-001"
+  },
+  "effectiveDateTime" : "2025-07-30T10:00:00+01:00",
+  "result" : [{
+    "reference" : "urn:uuid:observation-hr"
+  }]
+}

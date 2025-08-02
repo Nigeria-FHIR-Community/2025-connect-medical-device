@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="chemistry-analyzer-device"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-device"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device chemistry-analyzer-device</b></p><a name="chemistry-analyzer-device"> </a><a name="hcchemistry-analyzer-device"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-device.html">NG Device</a></p></div><p><b>identifier</b>: <code>https://son.gov.ng/device-id</code>/CHEM-ANLZR-0001</p><h3>UdiCarriers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>DeviceIdentifier</b></td></tr><tr><td style="display: none">*</td><td>12345678901234</td></tr></table><p><b>status</b>: Active</p><p><b>manufacturer</b>: Roche Diagnostics</p><p><b>manufactureDate</b>: 2023-06-15</p><p><b>expirationDate</b>: 2028-06-15</p><p><b>lotNumber</b>: LCHM2023A</p><p><b>serialNumber</b>: RC-2023-00987</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Roche Cobas Chemistry Analyzer</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: Cobas C311</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 408467006}">Clinical chemistry analyzer</span></p><p><b>note</b>: </p><blockquote><div><p>Calibrated on 2025-01-10. Scheduled for maintenance every 6 months.</p>
+</div></blockquote></div>
+  </text>
+  <identifier>
+    <system value="https://son.gov.ng/device-id"/>
+    <value value="CHEM-ANLZR-0001"/>
+  </identifier>
+  <udiCarrier>
+    <deviceIdentifier value="12345678901234"/>
+  </udiCarrier>
+  <status value="active"/>
+  <manufacturer value="Roche Diagnostics"/>
+  <manufactureDate value="2023-06-15"/>
+  <expirationDate value="2028-06-15"/>
+  <lotNumber value="LCHM2023A"/>
+  <serialNumber value="RC-2023-00987"/>
+  <deviceName>
+    <name value="Roche Cobas Chemistry Analyzer"/>
+    <type value="user-friendly-name"/>
+  </deviceName>
+  <modelNumber value="Cobas C311"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="408467006"/>
+      <display value="Clinical chemistry analyzer"/>
+    </coding>
+  </type>
+  <note>
+    <text value="Calibrated on 2025-01-10. Scheduled for maintenance every 6 months."/>
+  </note>
+</Device>

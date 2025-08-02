@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Device/device-001> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "device-001"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-001</b></p><a name=\"device-001\"> </a><a name=\"hcdevice-001\"> </a><p><b>identifier</b>: <code>http://hospital.smartdev.com/devices</code>/CHEM-ANA-0099</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: SmartDev</p><p><b>type</b>: <span title=\"Codes:\">Chemistry Analyser</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital.smartdev.com/devices"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "CHEM-ANA-0099" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "SmartDev"] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Chemistry Analyser" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

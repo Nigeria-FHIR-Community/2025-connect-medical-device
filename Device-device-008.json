@@ -1,0 +1,21 @@
+{
+  "resourceType" : "Device",
+  "id" : "device-008",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device device-008</b></p><a name=\"device-008\"> </a><a name=\"hcdevice-008\"> </a><p><b>identifier</b>: <code>http://hospital.smartdev.com/devices</code>/CHEM-ANA-0099</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: SmartDev</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Chemistry Analyser 9000</td><td>Manufacturer name</td></tr></table><p><b>type</b>: <span title=\"Codes:\">Chemistry Analyser</span></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hospital.smartdev.com/devices",
+    "value" : "CHEM-ANA-0099"
+  }],
+  "status" : "active",
+  "manufacturer" : "SmartDev",
+  "deviceName" : [{
+    "name" : "Chemistry Analyser 9000",
+    "type" : "manufacturer-name"
+  }],
+  "type" : {
+    "text" : "Chemistry Analyser"
+  }
+}

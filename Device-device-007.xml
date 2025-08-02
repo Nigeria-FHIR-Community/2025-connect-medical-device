@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="device-007"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device device-007</b></p><a name="device-007"> </a><a name="hcdevice-007"> </a><p><b>identifier</b>: <code>https://nigeria.gov.ng/devices</code>/CHEM-ANALYZER-007</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Global Diagnostics Ltd</p><p><b>modelNumber</b>: ChemX-2000</p><p><b>type</b>: <span title="Codes:">Automated Chemistry Analyzer</span></p></div>
+  </text>
+  <identifier>
+    <system value="https://nigeria.gov.ng/devices"/>
+    <value value="CHEM-ANALYZER-007"/>
+  </identifier>
+  <status value="active"/>
+  <manufacturer value="Global Diagnostics Ltd"/>
+  <modelNumber value="ChemX-2000"/>
+  <type>
+    <text value="Automated Chemistry Analyzer"/>
+  </type>
+</Device>

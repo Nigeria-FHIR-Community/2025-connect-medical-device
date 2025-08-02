@@ -1,0 +1,19 @@
+{
+  "resourceType" : "DeviceMetric",
+  "id" : "deviceMetric-008",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric deviceMetric-008</b></p><a name=\"deviceMetric-008\"> </a><a name=\"hcdeviceMetric-008\"> </a><p><b>type</b>: <span title=\"Codes:\">Heart Rate</span></p><p><b>unit</b>: <span title=\"Codes:\">beats/min</span></p><p><b>parent</b>: <a href=\"Bundle-DeviceAuditExample.html#urn-uuid-device-001\">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></p><p><b>operationalStatus</b>: On</p><p><b>category</b>: Measurement</p></div>"
+  },
+  "type" : {
+    "text" : "Heart Rate"
+  },
+  "unit" : {
+    "text" : "beats/min"
+  },
+  "parent" : {
+    "reference" : "urn:uuid:device-001"
+  },
+  "operationalStatus" : "on",
+  "category" : "measurement"
+}

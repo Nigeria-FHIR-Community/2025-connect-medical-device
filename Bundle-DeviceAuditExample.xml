@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="DeviceAuditExample"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-audit"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2025-07-30T10:10:00+01:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:audit-001"/>
+    <resource>
+      <AuditEvent>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="AuditEvent_null"> </a><p class="res-header-id"><b>Generated Narrative: AuditEvent </b></p><p><b>type</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-audit-event-type.html#audit-event-type-rest">Audit Event ID rest</a>: RESTful Operation</p><p><b>subtype</b>: <a href="http://hl7.org/fhir/R4/codesystem-restful-interaction.html#restful-interaction-read">FHIR Restful Interactions read</a>: read</p><p><b>recorded</b>: 2025-07-30 10:09:50+0100</p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td><td><b>Requestor</b></td></tr><tr><td style="display: none">*</td><td><a href="Bundle-DeviceAuditExample.html#urn-uuid-device-001">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></td><td>false</td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Site</b></td><td><b>Observer</b></td></tr><tr><td style="display: none">*</td><td>Laboratory Information System</td><td><a href="Bundle-DeviceAuditExample.html#urn-uuid-org-001">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></td></tr></table></div>
+        </text>
+        <type>
+          <system value="http://terminology.hl7.org/CodeSystem/audit-event-type"/>
+          <code value="rest"/>
+        </type>
+        <subtype>
+          <system value="http://hl7.org/fhir/restful-interaction"/>
+          <code value="read"/>
+        </subtype>
+        <recorded value="2025-07-30T10:09:50+01:00"/>
+        <agent>
+          <who>
+            <reference value="urn:uuid:device-001"/>
+          </who>
+          <requestor value="false"/>
+        </agent>
+        <source>
+          <site value="Laboratory Information System"/>
+          <observer>
+            <reference value="urn:uuid:org-001"/>
+          </observer>
+        </source>
+      </AuditEvent>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:device-001"/>
+    <resource>
+      <Device>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Device_null"> </a><p class="res-header-id"><b>Generated Narrative: Device </b></p><h3>UdiCarriers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>DeviceIdentifier</b></td></tr><tr><td style="display: none">*</td><td>CHEM12345678</td></tr></table><p><b>status</b>: Active</p><p><b>manufacturer</b>: BioAnalyzer Ltd</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>BioAnalyzer 2000</td><td>minjirya</td></tr></table></div>
+        </text>
+        <udiCarrier>
+          <deviceIdentifier value="CHEM12345678"/>
+        </udiCarrier>
+        <status value="active"/>
+        <manufacturer value="BioAnalyzer Ltd"/>
+        <deviceName>
+          <name value="BioAnalyzer 2000"/>
+          <type value="minjirya"/>
+        </deviceName>
+      </Device>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:org-001"/>
+    <resource>
+      <Organization>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_null"> </a><p class="res-header-id"><b>Generated Narrative: Organization </b></p><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF0001</p><p><b>name</b>: State Diagnostic Center</p></div>
+        </text>
+        <identifier>
+          <system value="https://herfama.lagos.ng"/>
+          <value value="HF0001"/>
+        </identifier>
+        <name value="State Diagnostic Center"/>
+      </Organization>
+    </resource>
+  </entry>
+</Bundle>

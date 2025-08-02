@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="DeviceObservationBundleExample"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-observation"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2025-07-30T08:00:00+01:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:device-003"/>
+    <resource>
+      <Device>
+        <id value="device-003"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Device_device-003"> </a><p class="res-header-id"><b>Generated Narrative: Device device-003</b></p><a name="device-003"> </a><a name="hcdevice-003"> </a><p><b>identifier</b>: <code>http://manufacturer.com/devices</code>/CHEM-2025-001</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: BioTech Instruments Ltd.</p><p><b>serialNumber</b>: SN12345678</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>BioChemX-3000</td><td>Model name</td></tr></table><p><b>modelNumber</b>: BioChemX-3000</p><p><b>type</b>: <span title="Codes:">Chemistry Analyzer</span></p></div>
+        </text>
+        <identifier>
+          <system value="http://manufacturer.com/devices"/>
+          <value value="CHEM-2025-001"/>
+        </identifier>
+        <status value="active"/>
+        <manufacturer value="BioTech Instruments Ltd."/>
+        <serialNumber value="SN12345678"/>
+        <deviceName>
+          <name value="BioChemX-3000"/>
+          <type value="model-name"/>
+        </deviceName>
+        <modelNumber value="BioChemX-3000"/>
+        <type>
+          <text value="Chemistry Analyzer"/>
+        </type>
+      </Device>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:observation-003"/>
+    <resource>
+      <Observation>
+        <id value="observation-003"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-003"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-003</b></p><a name="observation-003"> </a><a name="hcobservation-003"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:">Glucose Level</span></p><p><b>effective</b>: 2025-07-30 07:50:00+0100</p><p><b>value</b>: 6.2 mmol/L</p><p><b>device</b>: <a href="Bundle-DeviceMonitoringSessionExample.html#urn-uuid-device-003">Bundle: type = collection; timestamp = 2025-07-30 10:00:00+0100</a></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <text value="Glucose Level"/>
+        </code>
+        <effectiveDateTime value="2025-07-30T07:50:00+01:00"/>
+        <valueQuantity>
+          <value value="6.2"/>
+          <unit value="mmol/L"/>
+        </valueQuantity>
+        <device>
+          <reference value="urn:uuid:device-003"/>
+        </device>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:metric-003"/>
+    <resource>
+      <DeviceMetric>
+        <id value="metric-003"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DeviceMetric_metric-003"> </a><p class="res-header-id"><b>Generated Narrative: DeviceMetric metric-003</b></p><a name="metric-003"> </a><a name="hcmetric-003"> </a><p><b>type</b>: <span title="Codes:">Glucose</span></p><p><b>unit</b>: <span title="Codes:">mmol/L</span></p><p><b>category</b>: Measurement</p><p><b>measurementPeriod</b>: Once per 5 minutes</p></div>
+        </text>
+        <type>
+          <text value="Glucose"/>
+        </type>
+        <unit>
+          <text value="mmol/L"/>
+        </unit>
+        <category value="measurement"/>
+        <measurementPeriod>
+          <repeat>
+            <frequency value="1"/>
+            <period value="5"/>
+            <periodUnit value="min"/>
+          </repeat>
+        </measurementPeriod>
+      </DeviceMetric>
+    </resource>
+  </entry>
+</Bundle>

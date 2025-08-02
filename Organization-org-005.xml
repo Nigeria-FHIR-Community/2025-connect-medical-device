@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="org-005"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization org-005</b></p><a name="org-005"> </a><a name="hcorg-005"> </a><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF009</p><p><b>name</b>: Faith Medical Diagnostics</p></div>
+  </text>
+  <identifier>
+    <system value="https://herfama.lagos.ng"/>
+    <value value="HF009"/>
+  </identifier>
+  <name value="Faith Medical Diagnostics"/>
+</Organization>

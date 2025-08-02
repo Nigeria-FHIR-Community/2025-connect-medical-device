@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="medication-004"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication medication-004</b></p><a name="medication-004"> </a><a name="hcmedication-004"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-medication.html">NG Medication</a></p></div><p><b>code</b>: <span title="Codes:{http://www.nafdac.gov.ng/research/umls/rxnorm 723}">Amoxicillin 250mg Capsule</span></p><p><b>status</b>: Active</p><p><b>form</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medication-form cap}">Capsule</span></p><h3>Ingredients</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 372687004}">Amoxicillin (substance)</span></td><td>250 mg/1 capsule</td></tr></table></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nafdac.gov.ng/research/umls/rxnorm"/>
+      <code value="723"/>
+      <display value="Amoxicillin 250mg Capsule"/>
+    </coding>
+  </code>
+  <status value="active"/>
+  <form>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medication-form"/>
+      <code value="cap"/>
+      <display value="Capsule"/>
+    </coding>
+  </form>
+  <ingredient>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="372687004"/>
+        <display value="Amoxicillin (substance)"/>
+      </coding>
+    </itemCodeableConcept>
+    <strength>
+      <numerator>
+        <value value="250"/>
+        <unit value="mg"/>
+      </numerator>
+      <denominator>
+        <value value="1"/>
+        <unit value="capsule"/>
+      </denominator>
+    </strength>
+  </ingredient>
+</Medication>

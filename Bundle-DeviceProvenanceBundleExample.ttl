@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Bundle/DeviceProvenanceBundleExample> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DeviceProvenanceBundleExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2025-07-30T11:30:00+01:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:device-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:device-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:provenance-005"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:provenance-005> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:org-005"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:org-005> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:patient-005"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:patient-005> )
+  ] ) . # 
+
+<urn:uuid:device-001> a fhir:Device ;
+  fhir:id [ fhir:v "device-001"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_device-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device device-001</b></p><a name=\"device-001\"> </a><a name=\"hcdevice-001\"> </a><p><b>identifier</b>: <code>http://hospital.smartdev.com/devices</code>/CHEM-ANA-0099</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: SmartDev</p><p><b>type</b>: <span title=\"Codes:\">Chemistry Analyser</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital.smartdev.com/devices"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "CHEM-ANA-0099" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "SmartDev"] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Chemistry Analyser" ]
+  ] . # 
+
+<urn:uuid:provenance-005> a fhir:Provenance ;
+  fhir:id [ fhir:v "provenance-005"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_provenance-005\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance provenance-005</b></p><a name=\"provenance-005\"> </a><a name=\"hcprovenance-005\"> </a><p>Provenance for <code>urn:uuid:device-005</code></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2025-07-30 11:25:00+0100</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes:\">Device Registration Service</span></td><td>AutoSync Service</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:target ( [
+     fhir:reference [ fhir:v "urn:uuid:device-005" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2025-07-30T11:25:00+01:00"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:text [ fhir:v "Device Registration Service" ]
+     ] ;
+     fhir:who [
+       fhir:display [ fhir:v "AutoSync Service" ]
+     ]
+  ] ) ; # 
+  fhir:entity ( [
+     fhir:role [ fhir:v "source" ] ;
+     fhir:what [
+       fhir:display [ fhir:v "Device Onboarding CSV" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:org-005> a fhir:Organization ;
+  fhir:id [ fhir:v "org-005"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_org-005\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization org-005</b></p><a name=\"org-005\"> </a><a name=\"hcorg-005\"> </a><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF009</p><p><b>name</b>: Faith Medical Diagnostics</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://herfama.lagos.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HF009" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Faith Medical Diagnostics"] . # 
+
+<urn:uuid:patient-005> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-005"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-005\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-005</b></p><a name=\"patient-005\"> </a><a name=\"hcpatient-005\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Musa Abubakar  Male, DoB: 1988-04-22 ( https://nimc.gov.ng#NIN99887766)</p><hr/></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nimc.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "NIN99887766" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Abubakar" ] ;
+     fhir:given ( [ fhir:v "Musa" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1988-04-22"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

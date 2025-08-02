@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="lab-observation-004"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-observation-labresult"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation lab-observation-004</b></p><a name="lab-observation-004"> </a><a name="hclab-observation-004"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-observation-labresult.html">NG Observation - Laboratory Result</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 718-7}">Hemoglobin [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href="Patient/patient-001">Patient/patient-001</a></p><p><b>effective</b>: 2025-07-30 09:00:00+0100</p><p><b>performer</b>: <a href="Practitioner/practitioner-001">Practitioner/practitioner-001</a></p><p><b>value</b>: 13.5 g/dL</p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="718-7"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-001"/>
+  </subject>
+  <effectiveDateTime value="2025-07-30T09:00:00+01:00"/>
+  <performer>
+    <reference value="Practitioner/practitioner-001"/>
+  </performer>
+  <valueQuantity>
+    <value value="13.5"/>
+    <unit value="g/dL"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+    </coding>
+  </interpretation>
+</Observation>

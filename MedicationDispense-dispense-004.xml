@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <id value="dispense-004"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-medication-dispense"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationDispense dispense-004</b></p><a name="dispense-004"> </a><a name="hcdispense-004"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-medication-dispense.html">NG MedicationDispense</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 723}">Amoxicillin 250mg Capsule</span></p><p><b>subject</b>: <a href="Patient/patient-001">Patient/patient-001</a></p><p><b>context</b>: <a href="Encounter/example-encounter">Encounter/example-encounter</a></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner/pharmacist-001">Practitioner/pharmacist-001</a></td></tr></table><p><b>quantity</b>: 21 capsule</p><p><b>whenHandedOver</b>: 2025-08-05 10:30:00+0100</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Take one capsule three times daily for 7 days</p><p><b>timing</b>: 3 per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1 capsule</td></tr></table></blockquote></div>
+  </text>
+  <status value="completed"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="723"/>
+      <display value="Amoxicillin 250mg Capsule"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/patient-001"/>
+  </subject>
+  <context>
+    <reference value="Encounter/example-encounter"/>
+  </context>
+  <performer>
+    <actor>
+      <reference value="Practitioner/pharmacist-001"/>
+    </actor>
+  </performer>
+  <quantity>
+    <value value="21"/>
+    <unit value="capsule"/>
+  </quantity>
+  <whenHandedOver value="2025-08-05T10:30:00+01:00"/>
+  <dosageInstruction>
+    <text value="Take one capsule three times daily for 7 days"/>
+    <timing>
+      <repeat>
+        <frequency value="3"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="1"/>
+        <unit value="capsule"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationDispense>

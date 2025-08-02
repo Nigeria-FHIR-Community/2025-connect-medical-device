@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/MedicationRequest/medicationrequest-004> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medicationrequest-004"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-medication-request"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-medication-request>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest medicationrequest-004</b></p><a name=\"medicationrequest-004\"> </a><a name=\"hcmedicationrequest-004\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-medication-request.html\">NG MedicationRequest</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 723}\">Amoxicillin 250mg Capsule</span></p><p><b>subject</b>: <code>NgPatient/patient-001</code></p><p><b>encounter</b>: <code>NgEncounter/encounter-001</code></p><p><b>authoredOn</b>: 2025-08-05</p><p><b>requester</b>: <code>NgPractitioner/practitioner-001</code></p><p><b>recorder</b>: <code>NgPractitioner/practitioner-001</code></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Take one capsule three times a day for 7 days</p><p><b>timing</b>: 3 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 capsule</td></tr></table></blockquote><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td>2025-08-05 --&gt; 2025-08-12</td><td>21 capsule</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "723" ] ;
+       fhir:display [ fhir:v "Amoxicillin 250mg Capsule" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/NgPatient/patient-001> ;
+     fhir:reference [ fhir:v "NgPatient/patient-001" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://dhin.org/2025Connectathon/NgEncounter/encounter-001> ;
+     fhir:reference [ fhir:v "NgEncounter/encounter-001" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2025-08-05"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <https://dhin.org/2025Connectathon/NgPractitioner/practitioner-001> ;
+     fhir:reference [ fhir:v "NgPractitioner/practitioner-001" ]
+  ] ; # 
+  fhir:recorder [
+     fhir:link <https://dhin.org/2025Connectathon/NgPractitioner/practitioner-001> ;
+     fhir:reference [ fhir:v "NgPractitioner/practitioner-001" ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [ fhir:v "Take one capsule three times a day for 7 days" ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:frequency [ fhir:v "3"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "capsule" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2025-08-05"^^xsd:date ] ;
+       fhir:end [ fhir:v "2025-08-12"^^xsd:date ]
+     ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "21"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "capsule" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

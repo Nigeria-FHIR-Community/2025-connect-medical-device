@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Organization",
+  "id" : "org-007",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-007</b></p><a name=\"org-007\"> </a><a name=\"hcorg-007\"> </a><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF001</p><p><b>name</b>: Diagnostic Research Center</p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://herfama.lagos.ng",
+    "value" : "HF001"
+  }],
+  "name" : "Diagnostic Research Center"
+}

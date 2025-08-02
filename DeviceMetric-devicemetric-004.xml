@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceMetric xmlns="http://hl7.org/fhir">
+  <id value="devicemetric-004"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-device-metric"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DeviceMetric devicemetric-004</b></p><a name="devicemetric-004"> </a><a name="hcdevicemetric-004"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-device-metric.html">NG DeviceMetric</a></p></div><p><b>type</b>: <span title="Codes:{http://loinc.org 15074-8}">Glucose [Moles/volume] in Serum or Plasma</span></p><p><b>unit</b>: <span title="Codes:{http://unitsofmeasure.org mmol/L}">millimole per liter</span></p><p><b>operationalStatus</b>: On</p><p><b>color</b>: Color Yellow</p><p><b>category</b>: Measurement</p><p><b>measurementPeriod</b>: Once per 5 seconds</p><h3>Calibrations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>State</b></td><td><b>Time</b></td></tr><tr><td style="display: none">*</td><td>Offset</td><td>Calibrated</td><td>2025-07-30 09:00:00+0100</td></tr></table></div>
+  </text>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="15074-8"/>
+      <display value="Glucose [Moles/volume] in Serum or Plasma"/>
+    </coding>
+  </type>
+  <unit>
+    <coding>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mmol/L"/>
+      <display value="millimole per liter"/>
+    </coding>
+  </unit>
+  <operationalStatus value="on"/>
+  <color value="yellow"/>
+  <category value="measurement"/>
+  <measurementPeriod>
+    <repeat>
+      <frequency value="1"/>
+      <period value="5"/>
+      <periodUnit value="s"/>
+    </repeat>
+  </measurementPeriod>
+  <calibration>
+    <type value="offset"/>
+    <state value="calibrated"/>
+    <time value="2025-07-30T09:00:00+01:00"/>
+  </calibration>
+</DeviceMetric>

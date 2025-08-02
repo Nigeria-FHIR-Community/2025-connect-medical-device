@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Organization/org-manufacturer> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "org-manufacturer"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-manufacturer</b></p><a name=\"org-manufacturer\"> </a><a name=\"hcorg-manufacturer\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://ndra.gov.ng</code>/ABBOTT001</p><p><b>type</b>: <span title=\"Codes:\">manufacturer</span></p><p><b>name</b>: Abbott Diagnostics Ltd</p><p><b>address</b>: Plot 45 BioTech Drive Abuja FCT </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://ndra.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ABBOTT001" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:code [ fhir:v "manufacturer" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Abbott Diagnostics Ltd"] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Plot 45 BioTech Drive" ] ) ;
+     fhir:city [ fhir:v "Abuja" ] ;
+     fhir:district [ fhir:v "eti-osa" ] ;
+     fhir:state [ fhir:v "FCT" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

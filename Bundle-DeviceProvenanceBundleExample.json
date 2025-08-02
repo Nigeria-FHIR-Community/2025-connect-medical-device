@@ -1,0 +1,95 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "DeviceProvenanceBundleExample",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-provenance"]
+  },
+  "type" : "collection",
+  "timestamp" : "2025-07-30T11:30:00+01:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:device-001",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "device-001",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_device-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device device-001</b></p><a name=\"device-001\"> </a><a name=\"hcdevice-001\"> </a><p><b>identifier</b>: <code>http://hospital.smartdev.com/devices</code>/CHEM-ANA-0099</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: SmartDev</p><p><b>type</b>: <span title=\"Codes:\">Chemistry Analyser</span></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://hospital.smartdev.com/devices",
+        "value" : "CHEM-ANA-0099"
+      }],
+      "status" : "active",
+      "manufacturer" : "SmartDev",
+      "type" : {
+        "text" : "Chemistry Analyser"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:provenance-005",
+    "resource" : {
+      "resourceType" : "Provenance",
+      "id" : "provenance-005",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_provenance-005\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance provenance-005</b></p><a name=\"provenance-005\"> </a><a name=\"hcprovenance-005\"> </a><p>Provenance for <code>urn:uuid:device-005</code></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2025-07-30 11:25:00+0100</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes:\">Device Registration Service</span></td><td>AutoSync Service</td></tr></table></div>"
+      },
+      "target" : [{
+        "reference" : "urn:uuid:device-005"
+      }],
+      "recorded" : "2025-07-30T11:25:00+01:00",
+      "agent" : [{
+        "type" : {
+          "text" : "Device Registration Service"
+        },
+        "who" : {
+          "display" : "AutoSync Service"
+        }
+      }],
+      "entity" : [{
+        "role" : "source",
+        "what" : {
+          "display" : "Device Onboarding CSV"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:org-005",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "org-005",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_org-005\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization org-005</b></p><a name=\"org-005\"> </a><a name=\"hcorg-005\"> </a><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF009</p><p><b>name</b>: Faith Medical Diagnostics</p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://herfama.lagos.ng",
+        "value" : "HF009"
+      }],
+      "name" : "Faith Medical Diagnostics"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:patient-005",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-005",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-005\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-005</b></p><a name=\"patient-005\"> </a><a name=\"hcpatient-005\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Musa Abubakar  Male, DoB: 1988-04-22 ( https://nimc.gov.ng#NIN99887766)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "system" : "https://nimc.gov.ng",
+        "value" : "NIN99887766"
+      }],
+      "name" : [{
+        "family" : "Abubakar",
+        "given" : ["Musa"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1988-04-22"
+    }
+  }]
+}

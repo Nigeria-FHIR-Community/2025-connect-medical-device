@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/DocumentReference/example-document-reference> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-document-reference"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-document-reference"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-document-reference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference example-document-reference</b></p><a name=\"example-document-reference\"> </a><a name=\"hcexample-document-reference\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-document-reference.html\">NG DocumentReference</a></p></div><p><b>status</b>: Current</p><p><b>docStatus</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18842-5}\">Discharge summary</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/document-classcodes DS}\">Discharge Summary</span></p><p><b>subject</b>: <a href=\"Patient/patient-001\">Patient/patient-001</a></p><p><b>date</b>: 2025-08-05 12:30:00+0100</p><p><b>author</b>: <a href=\"Practitioner/practitioner-001\">Practitioner/practitioner-001</a></p><p><b>custodian</b>: <a href=\"Organization/org-hospital\">Organization/org-hospital</a></p><p><b>description</b>: Scanned copy of discharge summary for hospitalization between 01-Aug and 05-Aug</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td><td><b>Creation</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"https://example.org/docs/discharge-summary-20250805.pdf\">https://example.org/docs/discharge-summary-20250805.pdf</a></td><td>Discharge Summary</td><td>2025-08-05 12:00:00+0100</td></tr></table><p><b>format</b>: ihe.formatcode.fhir urn:ihe:iti:xds-sd:pdf:2008: XDS-SD PDF</p></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Encounter</b></td><td><b>Period</b></td><td><b>FacilityType</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Encounter/encounter-001\">Encounter/encounter-001</a></td><td>2025-08-01 10:00:00+0100 --&gt; 2025-08-05 09:00:00+0100</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/service-type 322}\">Hospital facility</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:docStatus [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:18842-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "18842-5" ] ;
+       fhir:display [ fhir:v "Discharge summary" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/document-classcodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DS" ] ;
+       fhir:display [ fhir:v "Discharge Summary" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/Patient/patient-001> ;
+     fhir:reference [ fhir:v "Patient/patient-001" ]
+  ] ; # 
+  fhir:date [ fhir:v "2025-08-05T12:30:00+01:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <https://dhin.org/2025Connectathon/Practitioner/practitioner-001> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-001" ]
+  ] ) ; # 
+  fhir:custodian [
+     fhir:link <https://dhin.org/2025Connectathon/Organization/org-hospital> ;
+     fhir:reference [ fhir:v "Organization/org-hospital" ]
+  ] ; # 
+  fhir:description [ fhir:v "Scanned copy of discharge summary for hospitalization between 01-Aug and 05-Aug"] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/pdf" ] ;
+       fhir:url [ fhir:v "https://example.org/docs/discharge-summary-20250805.pdf"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Discharge Summary" ] ;
+       fhir:creation [ fhir:v "2025-08-05T12:00:00+01:00"^^xsd:dateTime ]
+     ] ;
+     fhir:format [
+       fhir:system [ fhir:v "http://ihe.net/fhir/ihe.formatcode.fhir"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "urn:ihe:iti:xds-sd:pdf:2008" ] ;
+       fhir:display [ fhir:v "XDS-SD PDF" ]
+     ]
+  ] ) ; # 
+  fhir:context [
+     fhir:encounter ( [
+       fhir:link <https://dhin.org/2025Connectathon/Encounter/encounter-001> ;
+       fhir:reference [ fhir:v "Encounter/encounter-001" ]
+     ] ) ;
+     fhir:period [
+       fhir:start [ fhir:v "2025-08-01T10:00:00+01:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2025-08-05T09:00:00+01:00"^^xsd:dateTime ]
+     ] ;
+     fhir:facilityType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "322" ] ;
+         fhir:display [ fhir:v "Hospital facility" ]
+       ] )
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

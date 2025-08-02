@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Observation/observation-003> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-003"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-003</b></p><a name=\"observation-003\"> </a><a name=\"hcobservation-003\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">Glucose Level</span></p><p><b>effective</b>: 2025-07-30 07:50:00+0100</p><p><b>value</b>: 6.2 mmol/L</p><p><b>device</b>: <a href=\"Bundle-DeviceMonitoringSessionExample.html#urn-uuid-device-003\">Bundle: type = collection; timestamp = 2025-07-30 10:00:00+0100</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Glucose Level" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-07-30T07:50:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 6.2 ] ;
+     fhir:unit [ fhir:v "mmol/L" ]
+  ] ; # 
+  fhir:device [
+     fhir:reference [ fhir:v "urn:uuid:device-003" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

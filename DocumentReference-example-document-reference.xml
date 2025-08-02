@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="example-document-reference"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-document-reference"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference example-document-reference</b></p><a name="example-document-reference"> </a><a name="hcexample-document-reference"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-document-reference.html">NG DocumentReference</a></p></div><p><b>status</b>: Current</p><p><b>docStatus</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 18842-5}">Discharge summary</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/document-classcodes DS}">Discharge Summary</span></p><p><b>subject</b>: <a href="Patient/patient-001">Patient/patient-001</a></p><p><b>date</b>: 2025-08-05 12:30:00+0100</p><p><b>author</b>: <a href="Practitioner/practitioner-001">Practitioner/practitioner-001</a></p><p><b>custodian</b>: <a href="Organization/org-hospital">Organization/org-hospital</a></p><p><b>description</b>: Scanned copy of discharge summary for hospitalization between 01-Aug and 05-Aug</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td><td><b>Creation</b></td></tr><tr><td style="display: none">*</td><td>application/pdf</td><td><a href="https://example.org/docs/discharge-summary-20250805.pdf">https://example.org/docs/discharge-summary-20250805.pdf</a></td><td>Discharge Summary</td><td>2025-08-05 12:00:00+0100</td></tr></table><p><b>format</b>: ihe.formatcode.fhir urn:ihe:iti:xds-sd:pdf:2008: XDS-SD PDF</p></blockquote><h3>Contexts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Encounter</b></td><td><b>Period</b></td><td><b>FacilityType</b></td></tr><tr><td style="display: none">*</td><td><a href="Encounter/encounter-001">Encounter/encounter-001</a></td><td>2025-08-01 10:00:00+0100 --&gt; 2025-08-05 09:00:00+0100</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/service-type 322}">Hospital facility</span></td></tr></table></div>
+  </text>
+  <status value="current"/>
+  <docStatus value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18842-5"/>
+      <display value="Discharge summary"/>
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/document-classcodes"/>
+      <code value="DS"/>
+      <display value="Discharge Summary"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/patient-001"/>
+  </subject>
+  <date value="2025-08-05T12:30:00+01:00"/>
+  <author>
+    <reference value="Practitioner/practitioner-001"/>
+  </author>
+  <custodian>
+    <reference value="Organization/org-hospital"/>
+  </custodian>
+  <description value="Scanned copy of discharge summary for hospitalization between 01-Aug and 05-Aug"/>
+  <content>
+    <attachment>
+      <contentType value="application/pdf"/>
+      <url value="https://example.org/docs/discharge-summary-20250805.pdf"/>
+      <title value="Discharge Summary"/>
+      <creation value="2025-08-05T12:00:00+01:00"/>
+    </attachment>
+    <format>
+      <system value="http://ihe.net/fhir/ihe.formatcode.fhir"/>
+      <code value="urn:ihe:iti:xds-sd:pdf:2008"/>
+      <display value="XDS-SD PDF"/>
+    </format>
+  </content>
+  <context>
+    <encounter>
+      <reference value="Encounter/encounter-001"/>
+    </encounter>
+    <period>
+      <start value="2025-08-01T10:00:00+01:00"/>
+      <end value="2025-08-05T09:00:00+01:00"/>
+    </period>
+    <facilityType>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/service-type"/>
+        <code value="322"/>
+        <display value="Hospital facility"/>
+      </coding>
+    </facilityType>
+  </context>
+</DocumentReference>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="DeviceMonitoringSessionExample"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-device-monitoring-session"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2025-07-30T10:00:00+01:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:device-003"/>
+    <resource>
+      <Device>
+        <id value="device-008"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Device_device-008"> </a><p class="res-header-id"><b>Generated Narrative: Device device-008</b></p><a name="device-008"> </a><a name="hcdevice-008"> </a><p><b>identifier</b>: <code>http://hospital.smartdev.com/devices</code>/CHEM-ANA-0099</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: SmartDev</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Chemistry Analyser 9000</td><td>Manufacturer name</td></tr></table><p><b>type</b>: <span title="Codes:">Chemistry Analyser</span></p></div>
+        </text>
+        <identifier>
+          <system value="http://hospital.smartdev.com/devices"/>
+          <value value="CHEM-ANA-0099"/>
+        </identifier>
+        <status value="active"/>
+        <manufacturer value="SmartDev"/>
+        <deviceName>
+          <name value="Chemistry Analyser 9000"/>
+          <type value="manufacturer-name"/>
+        </deviceName>
+        <type>
+          <text value="Chemistry Analyser"/>
+        </type>
+      </Device>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:deviceMetric-003"/>
+    <resource>
+      <DeviceMetric>
+        <id value="deviceMetric-008"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DeviceMetric_deviceMetric-008"> </a><p class="res-header-id"><b>Generated Narrative: DeviceMetric deviceMetric-008</b></p><a name="deviceMetric-008"> </a><a name="hcdeviceMetric-008"> </a><p><b>type</b>: <span title="Codes:">Heart Rate</span></p><p><b>unit</b>: <span title="Codes:">beats/min</span></p><p><b>parent</b>: <a href="Bundle-DeviceAuditExample.html#urn-uuid-device-001">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></p><p><b>operationalStatus</b>: On</p><p><b>category</b>: Measurement</p></div>
+        </text>
+        <type>
+          <text value="Heart Rate"/>
+        </type>
+        <unit>
+          <text value="beats/min"/>
+        </unit>
+        <parent>
+          <reference value="urn:uuid:device-001"/>
+        </parent>
+        <operationalStatus value="on"/>
+        <category value="measurement"/>
+      </DeviceMetric>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:observation-hr"/>
+    <resource>
+      <Observation>
+        <id value="observation-hr"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-hr"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-hr</b></p><a name="observation-hr"> </a><a name="hcobservation-hr"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:">Heart Rate</span></p><p><b>subject</b>: <code>urn:uuid:patient-001</code></p><p><b>effective</b>: 2025-07-30 09:58:00+0100</p><p><b>value</b>: 84 beats/min</p><p><b>device</b>: <a href="Bundle-DeviceAuditExample.html#urn-uuid-device-001">Bundle: type = collection; timestamp = 2025-07-30 10:10:00+0100</a></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <text value="Heart Rate"/>
+        </code>
+        <subject>
+          <reference value="urn:uuid:patient-001"/>
+        </subject>
+        <effectiveDateTime value="2025-07-30T09:58:00+01:00"/>
+        <valueQuantity>
+          <value value="84"/>
+          <unit value="beats/min"/>
+        </valueQuantity>
+        <device>
+          <reference value="urn:uuid:device-001"/>
+        </device>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:diagnostic-report-003"/>
+    <resource>
+      <DiagnosticReport>
+        <id value="diagnostic-report-008"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DiagnosticReport_diagnostic-report-008"> </a><p class="res-header-id"><b>Generated Narrative: DiagnosticReport diagnostic-report-008</b></p><a name="diagnostic-report-008"> </a><a name="hcdiagnostic-report-008"> </a><h2><span title="Codes:">Vital Signs Summary</span> </h2><table class="grid"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2025-07-30 10:00:00+0100</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td/><td/></tr></table></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <text value="Vital Signs Summary"/>
+        </code>
+        <subject>
+          <reference value="urn:uuid:patient-001"/>
+        </subject>
+        <effectiveDateTime value="2025-07-30T10:00:00+01:00"/>
+        <result>
+          <reference value="urn:uuid:observation-hr"/>
+        </result>
+      </DiagnosticReport>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:patient-008"/>
+    <resource>
+      <Patient>
+        <id value="patient-008"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-008"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-008</b></p><a name="patient-008"> </a><a name="hcpatient-008"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Grace Ibrahim  Female, DoB: 1990-06-15 ( https://nimc.gov.ng#NIN98989898)</p><hr/></div>
+        </text>
+        <identifier>
+          <system value="https://nimc.gov.ng"/>
+          <value value="NIN98989898"/>
+        </identifier>
+        <name>
+          <family value="Ibrahim"/>
+          <given value="Grace"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1990-06-15"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:encounter-008"/>
+    <resource>
+      <Encounter>
+        <id value="encounter-008"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_encounter-008"> </a><p class="res-header-id"><b>Generated Narrative: Encounter encounter-008</b></p><a name="encounter-008"> </a><a name="hcencounter-008"> </a><p><b>status</b>: Finished</p><p><b>class</b>: [not stated] AMB: AMB</p><p><b>subject</b>: <code>urn:uuid:patient-001</code></p><p><b>period</b>: 2025-07-30 09:45:00+0100 --&gt; 2025-07-30 10:05:00+0100</p></div>
+        </text>
+        <status value="finished"/>
+        <class>
+          <code value="AMB"/>
+        </class>
+        <subject>
+          <reference value="urn:uuid:patient-001"/>
+        </subject>
+        <period>
+          <start value="2025-07-30T09:45:00+01:00"/>
+          <end value="2025-07-30T10:05:00+01:00"/>
+        </period>
+      </Encounter>
+    </resource>
+  </entry>
+</Bundle>

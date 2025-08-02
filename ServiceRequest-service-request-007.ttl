@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/ServiceRequest/service-request-007> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "service-request-007"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest service-request-007</b></p><a name=\"service-request-007\"> </a><a name=\"hcservice-request-007\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title=\"Codes:\">Calibration Procedure Request</span></p><p><b>subject</b>: <a href=\"Device-device-001.html\">Device: identifier = http://hospital.smartdev.com/devices#CHEM-ANA-0099; status = active; manufacturer = SmartDev; type = </a></p><p><b>authoredOn</b>: 2025-07-30</p><p><b>requester</b>: <a href=\"Organization/org-001\">Organization/org-001</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Calibration Procedure Request" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/Device/device-001> ;
+     fhir:reference [ fhir:v "Device/device-001" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2025-07-30"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <https://dhin.org/2025Connectathon/Organization/org-001> ;
+     fhir:reference [ fhir:v "Organization/org-001" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

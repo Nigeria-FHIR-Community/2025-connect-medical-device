@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/DiagnosticReport/ExampleNgDiagnosticReport> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleNgDiagnosticReport"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-diagnostic-report"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-diagnostic-report>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport ExampleNgDiagnosticReport</b></p><a name=\"ExampleNgDiagnosticReport\"> </a><a name=\"hcExampleNgDiagnosticReport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-diagnostic-report.html\">NG DiagnosticReport</a></p></div><h2><span title=\"Codes:{http://loinc.org 24323-8}\">Basic Metabolic Panel</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2025-07-30 10:30:00+0100</td></tr><tr><td>Reported</td><td>2025-07-30 11:00:00+0100</td></tr><tr><td>Performer</td><td> <a href=\"Organization/org-lab\">Organization/org-lab</a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td colspan=\"2\"><i>The observation 'Observation/obs-glucose' could not be resolved</i></td></tr><tr><td colspan=\"2\"><i>The observation 'Observation/obs-potassium' could not be resolved</i></td></tr></table><p>Basic metabolic panel results normal</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:24323-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "24323-8" ] ;
+       fhir:display [ fhir:v "Basic Metabolic Panel" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/Patient/patient-001> ;
+     fhir:reference [ fhir:v "Patient/patient-001" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-07-30T10:30:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2025-07-30T11:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://dhin.org/2025Connectathon/Organization/org-lab> ;
+     fhir:reference [ fhir:v "Organization/org-lab" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:link <https://dhin.org/2025Connectathon/Observation/obs-glucose> ;
+     fhir:reference [ fhir:v "Observation/obs-glucose" ]
+  ] [
+     fhir:link <https://dhin.org/2025Connectathon/Observation/obs-potassium> ;
+     fhir:reference [ fhir:v "Observation/obs-potassium" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "Basic metabolic panel results normal"] . # 
+
+# -------------------------------------------------------------------------------------
+
